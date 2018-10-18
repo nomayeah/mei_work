@@ -1,0 +1,128 @@
+.fo-body{
+  .fo-gender__area {
+    margin-bottom: 48px;
+    h4 {
+      margin-top: 44px;
+      margin-bottom: 18px;
+    }
+    li {
+      float: left;
+      /* position: relative; */
+      width: 50%;
+      border: 1px solid #70D4D4;
+      &:first-child {
+        border-radius: 8px 0px 0px 8px;
+      }
+      &:first-child input[type="radio"] + label {
+        border-radius: 7px 0px 0px 7px;
+      }
+      &:last-child {
+        border-radius: 0px 8px 8px 0px;
+      }
+      &:last-child input[type="radio"] + label {
+        border-radius: 0px 7px 7px 0px;
+      }
+      input[type="radio"] {
+        display: none;
+        + label {
+          margin-bottom: 0;
+          display: block;
+          background: #fff;
+          padding: 11px;
+          color: #a8a8a8;
+          text-align: center;
+          -webkit-transition-property: background, color;
+          -webkit-transition-duration: 250ms;
+          -webkit-transition-timing-function: linear;
+        }
+        &:checked + label {
+          color: #fff;
+          background-color: #70D4D4;
+        }
+      }
+    }
+  }
+  input.fo-body__input,
+  select.fo-body__input {
+    width: 100%;
+    height: 44px;
+    border: 1px solid #70D4D4;
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 16px;
+    color: #a8a8a8;
+    background-color: #fff;
+    -webkit-appearance: none;
+    box-shadow: none;
+  }
+}
+
+
+
+.fo-body .fo-set__area {
+  margin: 48px auto 0px; }
+  .fo-body .fo-set__area input[type="checkbox"] {
+    display: none; }
+    .fo-body .fo-set__area input[type="checkbox"]:checked + label::before {
+      content: "";
+      background-image: url(/image/icon/check02.sp.480.png);
+      background-size: 13px;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 20px;
+      height: 10px;
+      position: relative;
+      top: 4px;
+      padding-right: 5px;
+      display: inline-block;
+      border: 1px solid #5BC3C9;
+      border-radius: 4px;
+      margin-right: 14px;
+      padding: 10px; }
+    .fo-body .fo-set__area input[type="checkbox"] + label::before {
+      content: "";
+      opacity: .6;
+      //background-image: url(/image/icon/check03.sp.480.png);
+      background-size: 13px;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 20px;
+      height: 13px;
+      position: relative;
+      top: 4px;
+      display: inline-block;
+      border: 1px solid #5BC3C9;
+      border-radius: 4px;
+      margin-right: 14px;
+      padding: 10px; }
+
+
+
+.fo-name__area {
+  padding-top: 40px;
+}
+
+.fo-gender__area {
+  padding-top: 40px;
+  margin-bottom: 0 !important;
+}
+
+.fo-bDay__area {
+  padding-top: 40px;
+}
+
+.fo-bTime__area {
+  padding-top: 40px;
+}
+
+.fo-nArea_area {
+  padding-top: 35px;
+}
+
+.form-bArea__area {
+  padding-top: 35px;
+}
+
+@import "_bDay";
+@import "_bTime";
+@import "_320";

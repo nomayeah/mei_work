@@ -1,0 +1,297 @@
+.re {
+  .article-head {
+    padding: 24px;
+    border:  0;
+    img{
+      margin:  12px 0;
+    }
+  }
+  .result-article {
+    background-color:  #95DEDE;
+    margin: -12px -12px 64px;
+    padding:  12px;
+
+    .article-body {
+      background-image: url(https://placehold.jp/280x720.png);
+      p {
+        margin: 1em;
+        padding-bottom:  1em;
+      }
+    }
+
+    .fab-favorite {
+      top: 0;
+      border:  0;
+      background-color: transparent;
+    }
+
+    .fab {
+        box-shadow: none;
+    }
+  }
+  .recomend {
+    h4 {
+      font-size: 1.1em;
+      img {
+        margin-right: 12px;
+      }
+    }
+  }
+  &-explainText{
+    margin-top: 18px;
+    text-align: center;
+    &__main {
+      p {
+        text-align: justify;
+        font-size: 15px;
+        line-height: 23px;
+        color: #525252;
+      }
+    }
+    &__img {
+      width: 96px;
+      height: 96px;margin: auto;
+    }
+    &__title{
+      span {
+        display: block;
+      }
+      h4 {
+        width: 80%;
+        margin: 24px auto 12px;
+        font-size: 16px;
+        font-weight: bold;
+      }
+    }
+    &__tag {
+      padding-right: 5%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      a{
+        margin-bottom: 8px;
+      }
+      span {
+        margin: 0px 0px 1px 5px;
+        background-color: #70D4D4;
+        color: #FFF;
+        font-size: 12px;
+        padding: 6px 10px;
+      }
+    }
+    &__btn {
+      border-radius: 8px;
+      width: 90%;
+      margin: 0 auto;
+      text-align: center;
+      color: #333333;
+      padding: 12px 0px;
+      font-size: 18px;
+    }
+  }
+  &-recommend {
+    background-color: #FCF9E8;
+    padding: 0 12px;
+    &__knowothers {
+      color: #4F5756;
+      font-size: 16px;
+      &__title {
+        display: -ms-flexbox;
+        display: flex;
+        padding: 20px 0px;
+        img {
+          width: 24px;
+          height: 24px;
+          margin-right: 8px;
+        }
+      }
+      &__list{
+        li {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-align: center;
+          align-items: center;
+          position: relative;
+          padding: 16px 12px;
+          background: #FFF;
+          border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+          img {
+            width: 48px;
+            height: 48px;
+            margin-right: 12px;
+          }
+        }
+        &__text {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          max-width: 250px;
+        }
+        &__star {
+          position: absolute;
+          right: 0; top: 0px; bottom: 0px;
+          margin: auto;
+          width: 22px;
+          height: 22px;
+        }
+        &__fortune__tag {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+        }
+        span {
+          margin: 0.47em;
+          background-color: #70D4D4;
+          color: #FFF;
+          font-size:12px;
+          padding: 6px 10px;
+        }
+      }
+    }
+  }
+  &-area__bg{
+    margin: -12px;
+    margin-bottom: 24px;
+    padding: 12px 7px 7px;
+    background-image: url(/image/bgimg/color_bg__green.sp.480.png);
+  }
+  &-daily__content .js-DairyContent.mt-daily__content {
+    margin-top: 24px;
+  }
+}
+
+
+img.result-head,
+img.result-foot {
+    width: 100%;
+}
+
+  .re-explainText__img img{
+    width:100%;
+  }
+
+
+.m-tarot-result{
+  .re-explainText__title{
+    h4{
+      width: 80%;
+      margin: auto;
+    }
+  }
+}
+
+
+@media screen and (max-width: 320px){
+  .m-tarot-result .js-DairyContent .card ul.face.set li {
+    left: 8.5%;
+  }
+}
+
+
+.re-horoHelp {
+  z-index: 99;
+  position: absolute;
+  top: -40px;
+  right: 20px;
+  width: 100%;
+}
+
+.re-horoHelp__icon {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  z-index: 10;
+  > .btn {
+    position: relative;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 2px 0px;
+  }
+}
+
+.re-horoHelp__body {
+  transition: all 300ms 0s ease;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  right: -20px;
+  background-color: #fff;
+  width: 100%;
+  padding: 16px 16px 32px;
+  box-shadow: 2px 2px 10px #ccc;
+  &.js-active {
+    opacity: 1;
+    z-index: 100;
+  }
+  h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+  }
+  img {width: 100%;}
+  >.btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 2px 0px;
+    span::before, span::after {
+      content: "";
+      display: block;
+      width: 16px;
+      height: 2px;
+      background-color: #999;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+    }
+    span::before {
+      transform: rotate(45deg);
+    }
+    span::after {
+      transform: rotate(-45deg);
+    }
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    img {
+      width: 35px;
+    }
+    span {
+      flex: 1;
+      text-align: left;
+    }
+  }
+}

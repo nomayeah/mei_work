@@ -1,0 +1,175 @@
+.js{
+  &-DairyContent{
+    p {
+        line-height: 2em;
+        text-align: justify;
+    }
+    .card{
+       position: relative;
+       max-width: 375px;
+       margin: auto;
+       box-shadow:none;
+       background-color: transparent;
+      &List{
+      width:100%;
+      height:100%;
+      /* display:table-cell;
+      vertical-align:middle;*/
+      text-align:center;
+      }
+      ul{
+        height:200px;
+        position:relative;
+        max-width: 320px;
+        margin:24px auto 35px;
+        &.face {
+          &.set{
+            li{
+              position: absolute;
+              top: 90px;
+              left: 15%;
+              transform: rotate(-40deg);
+            }
+            &.move{
+              li{
+                position:absolute;
+                &:first-child {
+                  transform: translate(7px, -5px);
+                  transition: 1100ms;
+                }
+                &:nth-child(2) {
+                  transform: translate(23%, -15px);
+                  transition: 1100ms;
+                }
+                &:nth-child(3){
+                  transform: translate(44%, -27px);
+                  transition: 1300ms ;
+                }
+                &:nth-child(4){
+                  transform: translate(80%, -32px);
+                  transition: 1300ms ;
+                }
+                &:nth-child(5){
+                  transform: translate(110%, -27px);
+                  transition: 1200ms ;
+                }
+                &:nth-child(6){
+                  transform: translate(146%, -7px);
+                  transition: 1100ms ;
+                }
+                &:nth-child(7){
+                  transform: translate(166%, 15px);
+                  transition: 1000ms ;
+                }
+                &.draw{
+                  transition: 500ms;
+                  transform: translate(0,20px);
+                }
+              }
+            }
+          }
+           img {
+            width: 80px;
+          }
+        }
+        &.move{
+          li{
+            &:first-child img {
+              transform:rotate(-40deg);
+              transition: 500ms;
+            }
+            &:nth-child(2) img {
+              transform: rotate(-24deg);
+              transition: 500ms;
+            }
+            &:nth-child(3) img {
+              transform: rotate(-14deg);
+              transition: 500ms;
+            }
+            &:nth-child(4) img {
+              transform:rotate(0deg);
+              transition: 500ms;
+            }
+            &:nth-child(5) img {
+              transform:rotate(18deg);
+              transition: 500ms;
+            }
+            &:nth-child(6) img {
+              transform:rotate(36deg);
+              transition: 500ms;
+            }
+            &:last-child img {
+              transform:rotate(54deg);
+              transition: 1100ms;
+            }
+          }
+        }
+      }
+    }
+    .back{
+      position: absolute;
+      left: 33%;
+      bottom: 0;
+      transition: 2000ms;
+      img{
+        width: 80px;
+        transform: rotate(10deg);
+        display: none;
+      }
+    }
+    #haikei1,
+    #haikei2,
+    #haikei3{
+      /*height:200px;*/
+      padding-top: 30px;
+      //max-width: 280px;
+      margin: auto;
+      background-image: url(/image/bgimg/color_bg__purple.sp.480.png);
+      height: 128px;
+      margin-top: 16px;
+      border-radius: 6px;
+      max-width: 304px;
+      max-height: 128px;
+    }
+    #ta-result1,
+    #ta-result2,
+    #ta-result3{
+      position: relative;
+      /*bottom: 165px;*/
+      padding: 12px;
+    }
+    #haikei1_1,
+    #haikei2_1{
+      padding-top: 30px;
+      //max-width: 280px;
+      margin: auto;
+      background-image: url(/image/bgimg/color_bg__purple.sp.480.png);
+      height: 128px;
+      margin-top: 16px;
+      border-radius: 6px;
+      max-width: 304px;
+      max-height: 128px;
+      img{
+        display:block;
+      }
+    }
+    .back_1 {
+      position: absolute;
+      left: 33%;
+      bottom: 0;
+      transition: 2000ms;
+      img {
+        width:80px;
+        position: relative;
+        left: 100px;
+        transform: rotate(10deg);
+      }
+    }
+    #ta-result1_1,
+    #ta-result2_1{
+      position: relative;
+      /* bottom: 165px; */
+      padding: 12px;
+    }
+  }
+}

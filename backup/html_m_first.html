@@ -1,0 +1,186 @@
+<!--INC_F'template_head.txt'-->
+<style>
+@charset "UTF-8";
+.fi-body .fo-body h3 { margin-top: 25px; }
+
+.fi-body .fo-body .fo-name__area { margin-bottom: 48px; }
+
+.fi-body .fo-body .fo-name__area h4 { margin-bottom: 18px; }
+
+.fi-body .fo-body .fo-name__area p { margin-bottom: 16px; }
+
+.fi-body .fo-body .fo-name__area p a { color: #808080; }
+
+.fi-body .fo-body .fo-bDay__area { margin-bottom: 66px; }
+
+.fi-body .fo-body .fo-bTime__area { margin-bottom: 48px; }
+
+.fi-body .fo-body .fo-bTime__area p { margin-bottom: 16px; }
+
+.fi-body .fo-body .fo-bTime__area div:nth-child(2)::before { content: ""; clear: both; display: block; height: 0px; width: 80%; margin: auto; margin-bottom: 2px; border-top: 1px solid #e0e0e0; }
+
+.fi-body .fo-body .fo-bTime__area div:first-child { margin-bottom: 10px; }
+
+.fi-body .fo-body .fo-nArea_area { margin-bottom: 48px; }
+
+.fi-body .fo-body .fo-nArea_area p { margin-bottom: 16px; }
+
+.fi-btn__complete #js-profModal__open { width: 100%; position: fixed; bottom: 0; left: 0; height: 68px; padding: 25px; padding-top: 14px; color: #fff; background-color: #5BC3C9; margin: auto; z-index: 2; transition: 0.3s; }
+
+.fi-btn__complete input { /*display: none;*/ }
+
+.fi-header__firstMessage { background-image: url(/image/bgimg/header_bg.sp.480.png); position: relative; width: 100%; height: 254px; transition: 0.3s; z-index: 2; }
+
+.fi-header__firstMessage::before { content: ""; display: block; width: 0; height: 0; border: 10px solid transparent; border-bottom: 20px solid #fff; position: absolute; bottom: 20px; left: 0; right: 0; margin: auto; }
+
+.fi-header__firstMessage::after { content: ""; display: block; width: 100%; height: 20px; border-radius: 10px 10px 0 0; background-color: #fff; position: absolute; bottom: 0; left: 0; }
+
+.fi-header__firstMessage span { background-image: url(/image/header/title_bg.sp.480.png); background-repeat: no-repeat; background-size: 286px; background-position: 50%; height: 42px; width: 100%; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; position: absolute; top: 16px; left: 0; right: 0; margin: auto; z-index: 2; color: #249096; font-size: 17px; font-weight: 500; }
+
+.fi-header__firstMessage > img:nth-of-type(1) { width: 60px; position: absolute; left: 6px; z-index: 1; }
+
+.fi-header__firstMessage > img:nth-of-type(2) { width: 60px; position: absolute; right: 6px; z-index: 1; }
+
+.fi-header__firstSv { width: 143px; margin: 0px auto; padding-top: 70px; transition: 0.3s; }
+
+.fi-header__firstSv img { width: 100%; }
+
+.fi-header.js-active { padding-top: 130px; }
+
+.fi-header.js-active .fi-header__firstMessage { height: 130px; position: fixed; top: 0; left: 0; }
+
+.fi-header.js-active .fi-header__firstMessage span { opacity: 0; }
+
+.fi-header.js-active .fi-header__firstMessage .fi-header__firstSv { padding-top: 6px; width: 90px; }
+
+.fi-header.js-active .fi-header__firstMessage::before { bottom: 10px; }
+
+.fi-formArea { background-color: #fff; padding: 1px 1px 60px 1px; margin: 0; }
+
+label.birthtime-h::after { content: ""; position: absolute; display: block; border: 6px solid transparent; border-right: 8px solid #70D4D4; z-index: 1; right: 55%; top: 20px; transform: rotate(-90deg); }
+
+label.birthtime-h::before { content: "時"; font-size: 16px; color: #a8a8a8; position: absolute; top: 11px; left: 27%; z-index: 1; }
+
+label.birthtime-m::after { content: ""; position: absolute; display: block; border: 6px solid transparent; border-right: 8px solid #70D4D4; z-index: 1; right: 7%; top: 20px; transform: rotate(-90deg); }
+
+label.birthtime-m::before { content: "分"; font-size: 16px; color: #a8a8a8; position: absolute; top: 11px; right: 20%; z-index: 1; pointer-events: none; }
+
+label.birthday-y::after { content: ""; position: absolute; display: block; border: 6px solid transparent; border-right: 8px solid #70D4D4; z-index: 1; left: 34%; top: 20px; transform: rotate(-90deg); pointer-events: none; }
+
+label.birthday-y::before { content: "年"; font-size: 16px; color: #a8a8a8; position: absolute; top: 11px; left: 26%; z-index: 1; pointer-events: none; }
+
+label.birthday-m::after { content: ""; position: absolute; display: block; border: 6px solid transparent; border-right: 8px solid #70D4D4; z-index: 1; left: 62%; top: 20px; transform: rotate(-90deg); pointer-events: none; }
+
+label.birthday-m::before { content: "月"; font-size: 16px; color: #a8a8a8; position: absolute; top: 11px; left: 56%; z-index: 1; pointer-events: none; }
+
+label.birthday-d::after { content: ""; position: absolute; display: block; border: 6px solid transparent; border-right: 8px solid #70D4D4; z-index: 1; right: 6%; top: 20px; transform: rotate(-90deg); pointer-events: none; }
+
+label.birthday-d::before { content: "日"; font-size: 16px; color: #a8a8a8; position: absolute; top: 11px; left: 83%; z-index: 1; pointer-events: none; }
+
+label.fo-select__label { display: inline; }
+
+select { position: relative; }
+
+.fo-select__label + select { padding-left: 17% !important; }
+
+#fo-bDay .fo-select__label + select { padding-left: 5% !important; width: 26% !important; }
+
+#fo-bDay .fo-select__label.birthday-y + select {
+  /*padding-left: 10% !important; */
+  width: 40% !important;
+}
+
+#fo-nArea .fo-select__label + select { padding-left: 8px !important; text-align: left !important; text-align: -webkit-center; }
+
+.m-first main.page-body { padding: 0px; }
+
+.disabled_1, .disabled_2 { pointer-events: none; background: #c9c9c9 !important; }
+
+.disabled_3 #fi-btn__complete_text { display: none; }
+
+
+
+.fo-bTime__area {
+  position: relative;
+}
+.fo-bTime__area::after {
+  content: "※12時00分に設定されます。";
+  color: #5BC3C9;
+  display: block;
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 80%;
+  text-align: center;
+}
+
+
+</style>
+<!--<script src="/js/commonForm.js"></script>-->
+<script>
+(function(){ commonForm('edit',1); })();
+</script>
+
+<div class="fi-header">
+  <div class="fi-header__firstMessage">
+    <img src="/image/first/deco01.sp.480.png" alt=""><span>登録ありがとうございます</span><img src="/image/first/deco02.sp.480.png" alt="">
+    <div class="fi-header__firstSv"><img src="/image/sv/mei_aura.480.gif" alt=""></div>
+  </div>
+</div>
+
+<div class="fi-formArea fi-article fi-body">
+  <form id="fo-body" class="fo-body" action="/t.cgi">
+    <!--DEF_F-->
+    <input type="hidden" name="t" value="m/first/reg">
+
+    <div id="fo-gender" class="fo-gender__area">
+      <div class="title">
+        <h3 class="text-center">あなたのことを教えてください</h3>
+        <h4 class="text-center">あなたの性別は？</h4>
+      </div>
+      <ul class="clearfix">
+        <div class="col-xs-10 col-xs-offset-1">
+          <li class="text16">
+            <input id="gender_f" type="radio" name="gender" value="f" checked>
+            <label for="gender_f">女性</label>
+          </li>
+          <li class="text16">
+            <input id="gender_m" type="radio" name="gender" value="m">
+            <label for="gender_m">男性</label>
+          </li>
+        </div>
+      </ul>
+    </div>
+
+    <div id="fo-name" class="fo-name__area">
+      <div class="title">
+        <h4 class="text-center">なんとお呼びしましょう？</h4>
+      </div>
+      <div class=" clearfix">
+        <div class="col-xs-10 col-xs-offset-1 text-center">
+          <input type="text" name="dummy" style="display:none;">
+          <input id="fo-name__input" class="fo-body__input required" type="text" name="name" value="" maxlength="15" inputmode="kana" placeholder="ニックネーム">
+        </div>
+      </div>
+      <p class="text-center hide">
+        <a href="javascript:void(0);" id="popover" data-toggle="popover" data-placement="top" title="入力禁止文字について" data-content="入力禁止文字についての文書">
+          <span class="text14 text-muted">※入力文字禁止例</span>
+        </a>
+        <br>
+        <!--<span class="text-danger">[%IF e_name!=0%]※入力エラーです[%END%]</span>-->
+      </p>
+    </div>
+
+    <div id="fo-bDay" class="fo-bDay__area">
+      <div class="title">
+        <h4 class="text-center">生年月日はいつですか？</h4>
+      </div>
+      <p class="text-center">
+        <span class="text-primary text14">占星術に必要な情報です。</span><br>
+      </p>
+      <div class="text-center clearfix">
+        <div class="col-xs-10 col-xs-offset-1">
+          <label for="birthday-y" class="fo-select__label  birthday-y"></label>
+          <select id="birthday-y" class="fo-bDay__input fo-body__input ignore" inputmode="numeric" pattern="^(19|20)

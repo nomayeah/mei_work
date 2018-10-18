@@ -1,0 +1,114 @@
+.ft-firstView {
+
+  &__area {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    a {
+      background-color: #fff;
+      border: 1px solid #5BC3C9;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 24px;
+      width: 77px;
+      font-size: 12px;
+      text-decoration: none;
+      color: #39B0B8;
+      &:first-child {
+        background-color: #5BC3C9;
+        color: #fff;
+      }
+    }
+  }
+
+  &__message {
+    position: absolute;
+    top: 40%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 84%;
+    ol {
+      list-style-type: none;
+      padding-left: 15%;
+    }
+    li {
+      position: relative;
+      margin-bottom: 12px;
+      &::before {
+        content: "";
+        display: block;
+        width: 22px;
+        height: 22px;
+        background-image: url('/image/ftop/numbers.sp.480.png');
+        background-size: 264px;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -2px;
+        left: -16px;
+      }
+      span {
+        display: inline-block;
+        padding-left: 0;
+        margin-left: 10px;
+        padding-right: 4px;
+        background-image: linear-gradient(#fff 50%, #ffefba 50%, #FFEEBA);
+        line-height: 20px;
+        font-size: 17px;
+        position: relative;
+      }
+    }
+  }
+
+  &__messageTitle {
+    color: #665d4d;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 14px;
+    padding-top: 30px;
+    span {
+      position: relative;
+      display: inline-block;
+    }
+  }
+
+  &__messageList {
+    &.no_1 {
+      span::after {
+        content: "";
+        display: block;
+        width: 85px;
+        height: 85px;
+        background-image: url(/image/ftop/hane.sp.480.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        bottom: 0px;
+        right: -95px;
+      }
+    }
+  }
+
+  &__BottomArea {
+    position: absolute;
+    bottom: 9%;
+    left: 0;
+    color: #39B0B8;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+  }
+}

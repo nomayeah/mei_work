@@ -1,0 +1,49 @@
+.fo-body{
+  .fo-bDay__area {
+    select{
+      &[name="input_yyyy"],
+      &#birthday-y,
+      &[name="input_mm"],
+      &#birthday-m {
+        margin-right: 4%;
+      }
+    }
+    input{
+      &[name="input_yyyy"],
+      &#birthday-y,
+      &[name="input_mm"],
+      &#birthday-m{
+        margin-right: 4%;
+      }
+    }
+  }
+  .fo-bDay__input {
+    width: 30.66% !important;
+    display: inline-block;
+    float: left;
+    margin: 0px;
+  }
+}
+
+
+.fo-body .fo-bDay__area select#birthday-y {
+    padding-left: 4%;
+}
+.fo-body .fo-bDay__area select#birthday-m {
+    padding-left: 10%;
+}
+.fo-body .fo-bDay__area select#birthday-d {
+    padding-left: 10%;
+}
+
+
+
+
+@media screen and (max-width: 320px) {
+  .fo-body .fo-bDay__area select#birthday-m {
+    padding-left:8%;
+  }
+  .fo-body .fo-bDay__area select#birthday-d {
+    padding-left:8%;
+  }
+}

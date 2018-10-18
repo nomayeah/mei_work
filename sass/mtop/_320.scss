@@ -1,0 +1,18 @@
+@media screen and (max-width: 320px) {
+  .mt-list .search__list li:first-child{padding-left: 0;}
+  .mt-list .search__list li {padding-left: 8px;}
+  .js-DairyContent .back {left: 26%;}
+  .js-DairyContent .back_1 {left: 26%;}
+  .js-DairyContent .card ul.face.set li{left: 6.5%;}
+  .slick-slide a p{width: 150px;}
+  .mt-new span.menu_name{font-size: 13px;font-weight: bold;}
+  .mt-new .slider.mypattern .slick-slide a img{padding: 15px;}
+  span.grad-trigger::after,
+  span.grad-trigger2::after{left: 66%;}
+  .mt-week__section3 span.mt-week__summary {font-size: 12px;}
+  .mt-week__section1 {padding-left: 12px;}
+  .mt-week__section1 span {margin-right: 6px;}
+  .mt-week__phase {width: 30px;}
+  .mt-week__section2{padding-top: 12px;}
+  .mt-week__section2::after{left: 35px;}
+}

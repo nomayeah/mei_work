@@ -1,0 +1,197 @@
+@import "header/main";
+@import "footer/main";
+@import "js/main";
+@import "ftop/main";
+@import "mtop/main";
+@import "result/main";
+@import "list/main";
+@import "default/main";
+@import "first/main";
+@import "form/main";
+@import "edit/main";
+@import "search/main";
+@import "sel/main";
+@import "info/main";
+@import "request/main";
+@import "explanation/main";
+@import "horoscope/main";
+@import "kobetsu/main";
+
+
+/*サイト共通*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+}
+
+body{
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  background-image: url(/image/bgimg/list_bg.sp.480.png);
+  #page-body {
+    max-width: 640px;
+  }
+  .wrapper {
+    position: relative;
+    //z-index: 10;
+  }
+}
+
+@media all and (-ms-high-contrast:none) {
+    body {
+        font-family: "メイリオ",Meiryo,"游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+    }
+}
+
+
+main.page-body {
+  margin-bottom: 0px;
+  padding-top: 50px;
+  &.topPad{
+    padding-top:28px;
+  }
+}
+
+a{
+  color: #5ABFB3;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+/*見出し*/
+.title{
+  h{
+    &1{
+      font-size: 24px;
+    }
+    &2{
+      font-size: 22px;
+    }
+    &3{
+      font-size: 20px;
+    }
+    &4{
+      font-size: 18px;
+    }
+    &5{
+      font-size: 16px;
+    }
+    &6{
+      font-size: 14px;
+    }
+  }
+}
+
+/*テキスト*/
+.text{
+  &24{
+    font-size: 20px;
+  }
+  &22{
+    font-size: 20px;
+  }
+  &20{
+    font-size: 20px;
+  }
+  &18{
+    font-size: 18px;
+  }
+  &16{
+    font-size: 16px;
+  }
+  &15{
+    font-size: 15px;
+  }
+  &14{
+    font-size: 14px;
+  }
+  &12{
+    font-size: 12px;
+  }
+  &-primary{
+    color: #5BC3C9;
+  }
+  &-muted{
+    color: #808080;
+  }
+  &-danger{
+    color: #F26546;
+  }
+}
+
+// @font-face {
+//     font-family: 'FrederickatheGreat-Regular';
+//     src: url('/css/fonts/FrederickatheGreat-Regular.ttf');
+// }
+
+
+/*タグ*/
+.tag-group-lg .tag {
+    border: 0;
+}
+.tag {
+  color: #fff;
+  background-color: #70D4D4;
+  .unread {
+    background-color: #BAA8FF;
+  }
+}
+
+/*画像*/
+.af{
+  &0 {
+    background-color: #E0DAF7;
+  }
+  &1 {
+    background-color: #B7E8E8;
+  }
+  &2 {
+    background-color: #FFF8E0;
+  }
+}
+
+/*ボタン*/
+.btn{
+  border-radius: 8px;
+  &-setting {
+    background-color: #888888;
+    color: #fff;
+  }
+  &-primary{
+    &.disable {
+      background-color: #c9c9c9;
+      border-color: #c9c9c9;
+      color: #74807E;
+    }
+  }
+  &-secondary {
+    color: #5BC3C9;
+    background-color: #fff;
+    border: 2px solid #5BC3C9;
+    &.disable {
+      border-color: #c9c9c9;
+      color: #74807E;
+    }
+  }
+  &-tertiary {
+    background-color: #70D4D4;
+    border-color: #70D4D4;
+    color: #fff;
+    &.disable {
+      background-color: #a8a8a8;
+      border-color: #a8a8a8;
+      color: #e3e3e3;
+    }
+  }
+}
+.disabled_1,
+.disabled_2{
+  pointer-events: none;
+  background: #c9c9c9!important;
+}
+.disabled_3 #fi-btn__complete_text{
+  display:none;
+}

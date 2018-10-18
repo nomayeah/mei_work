@@ -1,0 +1,40 @@
+select{
+  position:relative;
+}
+
+
+.fo-select__label + select{
+  padding-left:17%!important;
+}
+
+
+#fo-bDay {
+  .fo-select__label + select {
+    padding-left: 3%!important;
+    width: 26% !important;
+  }
+  .fo-select__label.birthday-y + select {
+    padding-left: 5%!important;
+    width: 40%!important;
+  }
+}
+
+#fo-nArea .fo-select__label + select {
+  padding-left: 8px!important;
+  text-align:left!important;
+  text-align: -webkit-center;
+}
+
+
+.m-first main.page-body {
+  padding: 0px;
+}
+
+.disabled_1,
+.disabled_2{
+pointer-events: none;
+background: #c9c9c9!important;
+}
+.disabled_3 #fi-btn__complete_text{
+display:none;
+}

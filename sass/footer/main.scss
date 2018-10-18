@@ -1,0 +1,85 @@
+footer{
+  &.footer {
+      background: transparent;
+      margin-top: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+      nav{
+        &.cm-footer{
+          ul{
+            &.cm-footer-help-link-group{
+              &.cm-white {
+                background:  transparent;
+                li{
+                  border-color: #000;
+                  border-bottom: 0;
+                  padding:0 4px;
+                  &::after{
+                    content:"";
+                    border-bottom:1px solid #000;
+                    height:1px;
+                    width:100%;
+                    display:block;
+                  }
+                  &:last-child::after {
+                    border: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    .inc {
+      background-color: #6BCFCF;
+    }
+
+    ul.important-list{
+      margin-bottom:  0;
+      li {
+        border-color: #000;
+        border-bottom: 0;
+        padding: 0 4px;
+        &.important-list__cre {
+          background-color:#fff;
+        }
+        &::after{
+          content: "";
+          border-bottom: 1px solid #000;
+          height: 1px;
+          width: 100%;
+          display: block;
+        }
+        a {
+          color:#222;
+          text-decoration: none;
+          display: block;
+          padding: 10px;
+          position: relative;
+        }
+      }
+    }
+  }
+}
+
+
+footer.footer .cm-footer .cm-footer-help-link-group .cm-help-link:not(:nth-child(odd)) {
+    border-left: 0;
+}
+.cm-footer .cm-footer-help-link-group .cm-help-link:not(:nth-child(even)) {
+    border-right: 1px solid #000;
+}
+
+.f-top .cm-footer .cm-footer-help-link-group .cm-help-link:not(:nth-child(even)) {
+    border-right: 0;
+}
+
+.f-top .footer nav.cm-footer ul.cm-footer-help-link-group.cm-white li:nth-child(11)::after{
+    border-bottom:0;
+}
+.cm-footer .cm-footer-help-link-group li:last-child {
+    width:50%!important;
+}
+.cm-footer .cm-footer-help-link-group .cm-help-link:not(:nth-child(odd)) {
+    border-left: none;
+}

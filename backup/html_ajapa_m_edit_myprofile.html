@@ -1,0 +1,58 @@
+<!--INC_F'template_head.txt'-->
+<style>
+.site-header.hide {
+    display: block !important;
+}
+  .fo-name__area { padding-top: 40px; }
+
+.fo-gender__area { padding-top: 40px; margin-bottom: 0 !important; }
+
+.fo-bDay__area { padding-top: 40px; }
+
+.fo-bTime__area { padding-top: 40px; }
+
+.fo-nArea_area { padding-top: 35px; }
+
+.form-bArea__area { padding-top: 35px; }
+
+
+</style>
+
+<article class="ed-body">
+  <div>
+      <!--[%IF error==0 || error=='' %]自分のプロフィール変更[%ELSE%]入力エラー![%END%]-->
+    <form id="fo-body" class="fo-body" method="get" action="/t.cgi">
+    <input type="hidden" name="t" value="m/edit/mycomplete">
+      <div id="fo-name" class="fo-name__area">
+        <div class="clearfix">
+          <div class="col-xs-12 fo-labelSpace">
+            <input type="text" name="dummy" style="display:none;">
+            <label for="tag-accent">ニックネーム <span class="tag">必須</span>[%IF e_name!=0%]<span class="text-danger">←</span>[%END%]</label>
+            <input id="fo-name__input" class="fo-body__input required" type="text" name="name" maxlength="15" istyle="1" value="[%IF e_name==0%][%name_des%][%END%]"  autofocus inputmode="kana" placeholder="ニックネーム">
+          </div>
+        </div>
+      </div>
+
+      <div id="fo-gender" class="fo-gender__area clearfix">
+        <label class="col-xs-12" for="tag-accent">性別 <span class="tag">必須</span></label>
+        <ul class="clearfix">
+          <div class="col-xs-12">
+            <li class="text16">
+              <input id="gender_f" type="radio" name="gender" value="f"[%IF gender=='f' || gender==''%] checked[%END%]>
+              <label for="gender_f">女性</label>
+            </li>
+            <li class="text16">
+              <input id="gender_m" type="radio" name="gender" value="m"[%IF gender=='m' -%] checked[%END%]>
+              <label for="gender_m">男性</label>
+            </li>
+          </div>
+        </ul>
+      </div>
+
+      <div id="fo-bDay" class="fo-bDay__area">
+        <div class="clearfix">
+          <label class="col-xs-12" for="tag-accent">生年月日 <span class="tag">必須</span>[%IF e_birthday!=0%]<span class="text-danger">←</span>[%END%]</label>
+          <div class="col-xs-12">
+
+            <label class="birthday-y"></label>
+            <select id="birthday-y" class="fo-bDay__input fo-body__input ignore" inputmode="numeric" pattern="^(19|20)

@@ -1,0 +1,42 @@
+.m-request-top body {
+  background: #fff; }
+
+.m-request-top main#page-body {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  position: relative; }
+
+.m-request-top header {
+  display: none; }
+
+.m-request-top .se-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 1;
+  background: #fff;
+  padding: 2px 7px;
+  border-radius: 50%; }
+  .m-request-top .se-close a {
+    display: block;
+    background-image: url(/image/icon/close.sp.480.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 9px 4px;
+    background-size: 10px; }
+
+.m-request-complete body {
+  background: #fff; }
+
+.m-request-complete main#page-body {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  position: relative; }
+
+.m-request-complete header {
+  display: none; }
+
+.m-request-complete .content-body {
+  padding-bottom: 210px; }

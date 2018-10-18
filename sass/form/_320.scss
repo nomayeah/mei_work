@@ -1,0 +1,11 @@
+@media screen and (max-width: 320px) {
+  .fo-body .fo-bDay__area select#birthday-y {
+    padding-left: 3%!important;
+    padding-right: 2%;
+    font-size: 14px;
+  }
+  .fo-body .fo-bTime__area select#birthtime-h,
+  .fo-body .fo-bTime__area select#birthtime-m {
+    padding-left: 15%!important;
+  }
+}

@@ -1,0 +1,103 @@
+.fo-body{
+  .fo-bTime__area{
+    position: relative;
+    select{
+      &[name="input_hh"],
+      &#birthtime-h,{
+        margin-right: 4%
+      }
+      &[type="checkbox"]{
+        display: none;
+        &:checked + label{
+          color: #fff;
+          background-color: #70D4D4;
+        }
+        + label {
+          border: 1px solid #70D4D4;
+          margin-bottom: 0;
+          display: block;
+          background: #fff;
+          padding: 11px;
+          color: #a8a8a8;
+          text-align: center;
+          -webkit-transition-property: background, color;
+          -webkit-transition-duration: 250ms;
+          -webkit-transition-timing-function: linear;
+        }
+      }
+    }
+
+    input{
+      &[name="input_hh"],
+      &#birthtime-h{
+        margin-right: 4%
+      }
+
+      &[type="checkbox"]{
+        display: none;
+        &:checked + label{
+          color: #fff;
+          background-color: #70D4D4;
+        }
+        + label {
+          border: 1px solid #70D4D4;
+          margin-bottom: 0;
+          display: block;
+          background: #fff;
+          padding: 11px;
+          color: #a8a8a8;
+          text-align: center;
+          -webkit-transition-property: background, color;
+          -webkit-transition-duration: 250ms;
+          -webkit-transition-timing-function: linear;
+        }
+      }
+    }
+    &::after {
+      content: "※12時00分に設定されます。";
+      color: #5BC3C9;
+      display: block;
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 80%;
+      text-align: center;
+    }
+  }
+
+  .fo-bTime__input {
+    width: 48% !important;
+    display: inline-block;
+    float: left;
+    margin: 0px;
+  }
+}
+
+.fo-body .fo-bTime__area div + div:last-child::before {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0px;
+    width: 90%;
+    margin: auto;
+    margin-top: 70px;
+    border-top: 1px solid #e0e0e0;
+  }
+  .fo-body .fo-bTime__area div + div:last-child::before {
+      content: "";
+      clear: both;
+      display: block;
+      height: 0px;
+      width: 90%;
+      margin: auto;
+      margin-top: 70px;
+      border-top: 1px solid #e0e0e0;
+  }
+  .fo-body .fo-bTime__area select#birthtime-h {
+      padding-left: 17%;
+  }
+  .fo-body .fo-bTime__area select#birthtime-m {
+      padding-left: 17%;
+  }

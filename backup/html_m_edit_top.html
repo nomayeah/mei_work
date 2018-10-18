@@ -1,0 +1,60 @@
+<!--INC_F'template_head.txt'-->
+<style>
+.ed-content .ed-table { width: 84%; margin: 0 auto 20px; }
+
+.ed-content .ed-table td { padding: 18px 0 4px 18px; font-size: 16px; font-weight: 700; color: #525252; border-top: 0; border-bottom: 1px solid #E3E3E3; }
+
+.ed-content .ed-table td:first-child { width: 110px; font-size: 14px; font-weight: 100; padding-left: 0; color: #808080; }
+
+</style>
+
+<header id="ed-head" class="ed-head">
+  <ul class="ed-head__tab clearfix text-center text18">
+    <li class="[%IF t=='m/edit/top';'active';END-%]"><a href="/t.cgi?t=m/edit/top&<!--DEF_P-->">あなた</a></li>
+    <li class="[%IF t=='m/edit/friend';'active';END-%]"><a href="/t.cgi?t=m/edit/friend&<!--DEF_P-->">相手</a></li>
+  </ul>
+</header>
+<section class="section">
+  <div class="ed-content">
+    <div id="ed-content__edit" class="tab-pane active">
+      <div class="row">
+        <table class="table ed-table">
+          <tr><td class="text14">ニックネーム</td><td class="text16">[%name%]</td></tr>
+          <tr><td class="text14">性別</td><td class="text16">[%gender_conv%]</td></tr>
+          <tr><td class="text14">生年月日</td><td class="text16">[%birthday_des%]</td></tr>
+          <tr><td class="text14">出生時間</td><td class="text16">[%birthtime_des%]</td></tr>
+          <tr><td class="text14">出生地域</td><td class="text16">[%birth_area_conv%]</td></tr>
+          <tr><td class="text14">詳細地域</td><td class="text16">[%birth_detail_conv%]</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+    <div class="btn-list clearfix">
+      <div class="col-xs-12">
+        <a class="btn btn-block btn-primary" href="/t.cgi?t=m/edit/myprofile&<!--DEF_P-->">編集</a>
+      </div>
+    </div>
+</section>
+<section class="section">
+  <DTAG payment="creditcard">
+    <ul class="list list-group">
+      <li class="list-group-item">
+        <a href="<DTAG+ mode="site" env="cocoloni|pga">http://websmart.zappallas.com<D_ELSE>http://websmart.ajapa.jp</DTAG>/web_u_pay/authentication/change?serviceCode=????_1001&domain=<DTAG+ mode="site" env="cocoloni|pga">[%common_site_info.domain%].pga.jp<D_ELSE>[%common_site_info.domain%].ajapa.jp</DTAG>&newAuth=1">
+          <h4 class="menu-name">決済・ログイン情報変更</h4>
+        </a>
+      </li>
+      <li>
+        <a href="<DTAG+ mode="site" env="cocoloni|pga">http://websmart.zappallas.com<D_ELSE>http://websmart.ajapa.jp</DTAG>/web_u_pay/authentication/reissue?serviceCode=????_1001&domain=<DTAG+ mode="site" env="cocoloni|pga">[%common_site_info.domain%].pga.jp<D_ELSE>[%common_site_info.domain%].ajapa.jp</DTAG>&newAuth=1">
+          <h4 class="menu-name">パスワード再発行・変更</h4>
+        </a>
+      </li>
+      <li>
+        <a href="/t.cgi?t=m/help/privacy&<!--DEF_P-->">
+          <h4 class="menu-name">個人情報の取り扱いについて</h4>
+        </a>
+      </li>
+    </ul>
+  </DTAG>
+</section>
+
+<!--INC_F'template_foot.txt'-->

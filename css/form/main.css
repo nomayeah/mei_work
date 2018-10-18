@@ -1,0 +1,224 @@
+@charset "UTF-8";
+.fo-body .fo-gender__area {
+  margin-bottom: 48px; }
+  .fo-body .fo-gender__area h4 {
+    margin-top: 44px;
+    margin-bottom: 18px; }
+  .fo-body .fo-gender__area li {
+    float: left;
+    /* position: relative; */
+    width: 50%;
+    border: 1px solid #70D4D4; }
+    .fo-body .fo-gender__area li:first-child {
+      border-radius: 8px 0px 0px 8px; }
+    .fo-body .fo-gender__area li:first-child input[type="radio"] + label {
+      border-radius: 7px 0px 0px 7px; }
+    .fo-body .fo-gender__area li:last-child {
+      border-radius: 0px 8px 8px 0px; }
+    .fo-body .fo-gender__area li:last-child input[type="radio"] + label {
+      border-radius: 0px 7px 7px 0px; }
+    .fo-body .fo-gender__area li input[type="radio"] {
+      display: none; }
+      .fo-body .fo-gender__area li input[type="radio"] + label {
+        margin-bottom: 0;
+        display: block;
+        background: #fff;
+        padding: 11px;
+        color: #a8a8a8;
+        text-align: center;
+        -webkit-transition-property: background, color;
+        -webkit-transition-duration: 250ms;
+        -webkit-transition-timing-function: linear; }
+      .fo-body .fo-gender__area li input[type="radio"]:checked + label {
+        color: #fff;
+        background-color: #70D4D4; }
+
+.fo-body input.fo-body__input,
+.fo-body select.fo-body__input {
+  width: 100%;
+  height: 44px;
+  border: 1px solid #70D4D4;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 16px;
+  color: #a8a8a8;
+  background-color: #fff;
+  -webkit-appearance: none;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+
+.fo-body .fo-set__area {
+  margin: 48px auto 0px; }
+
+.fo-body .fo-set__area input[type="checkbox"] {
+  display: none; }
+
+.fo-body .fo-set__area input[type="checkbox"]:checked + label::before {
+  content: "";
+  background-image: url(/image/icon/check02.sp.480.png);
+  background-size: 13px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 10px;
+  position: relative;
+  top: 4px;
+  padding-right: 5px;
+  display: inline-block;
+  border: 1px solid #5BC3C9;
+  border-radius: 4px;
+  margin-right: 14px;
+  padding: 10px; }
+
+.fo-body .fo-set__area input[type="checkbox"] + label::before {
+  content: "";
+  opacity: .6;
+  background-size: 13px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 13px;
+  position: relative;
+  top: 4px;
+  display: inline-block;
+  border: 1px solid #5BC3C9;
+  border-radius: 4px;
+  margin-right: 14px;
+  padding: 10px; }
+
+.fo-name__area {
+  padding-top: 40px; }
+
+.fo-gender__area {
+  padding-top: 40px;
+  margin-bottom: 0 !important; }
+
+.fo-bDay__area {
+  padding-top: 40px; }
+
+.fo-bTime__area {
+  padding-top: 40px; }
+
+.fo-nArea_area {
+  padding-top: 35px; }
+
+.form-bArea__area {
+  padding-top: 35px; }
+
+.fo-body .fo-bDay__area select[name="input_yyyy"], .fo-body .fo-bDay__area select#birthday-y, .fo-body .fo-bDay__area select[name="input_mm"], .fo-body .fo-bDay__area select#birthday-m {
+  margin-right: 4%; }
+
+.fo-body .fo-bDay__area input[name="input_yyyy"], .fo-body .fo-bDay__area input#birthday-y, .fo-body .fo-bDay__area input[name="input_mm"], .fo-body .fo-bDay__area input#birthday-m {
+  margin-right: 4%; }
+
+.fo-body .fo-bDay__input {
+  width: 30.66% !important;
+  display: inline-block;
+  float: left;
+  margin: 0px; }
+
+.fo-body .fo-bDay__area select#birthday-y {
+  padding-left: 4%; }
+
+.fo-body .fo-bDay__area select#birthday-m {
+  padding-left: 10%; }
+
+.fo-body .fo-bDay__area select#birthday-d {
+  padding-left: 10%; }
+
+@media screen and (max-width: 320px) {
+  .fo-body .fo-bDay__area select#birthday-m {
+    padding-left: 8%; }
+  .fo-body .fo-bDay__area select#birthday-d {
+    padding-left: 8%; } }
+
+.fo-body .fo-bTime__area {
+  position: relative; }
+  .fo-body .fo-bTime__area select[name="input_hh"], .fo-body .fo-bTime__area select#birthtime-h {
+    margin-right: 4%; }
+  .fo-body .fo-bTime__area select[type="checkbox"] {
+    display: none; }
+    .fo-body .fo-bTime__area select[type="checkbox"]:checked + label {
+      color: #fff;
+      background-color: #70D4D4; }
+    .fo-body .fo-bTime__area select[type="checkbox"] + label {
+      border: 1px solid #70D4D4;
+      margin-bottom: 0;
+      display: block;
+      background: #fff;
+      padding: 11px;
+      color: #a8a8a8;
+      text-align: center;
+      -webkit-transition-property: background, color;
+      -webkit-transition-duration: 250ms;
+      -webkit-transition-timing-function: linear; }
+  .fo-body .fo-bTime__area input[name="input_hh"], .fo-body .fo-bTime__area input#birthtime-h {
+    margin-right: 4%; }
+  .fo-body .fo-bTime__area input[type="checkbox"] {
+    display: none; }
+    .fo-body .fo-bTime__area input[type="checkbox"]:checked + label {
+      color: #fff;
+      background-color: #70D4D4; }
+    .fo-body .fo-bTime__area input[type="checkbox"] + label {
+      border: 1px solid #70D4D4;
+      margin-bottom: 0;
+      display: block;
+      background: #fff;
+      padding: 11px;
+      color: #a8a8a8;
+      text-align: center;
+      -webkit-transition-property: background, color;
+      -webkit-transition-duration: 250ms;
+      -webkit-transition-timing-function: linear; }
+  .fo-body .fo-bTime__area::after {
+    content: "※12時00分に設定されます。";
+    color: #5BC3C9;
+    display: block;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 80%;
+    text-align: center; }
+
+.fo-body .fo-bTime__input {
+  width: 48% !important;
+  display: inline-block;
+  float: left;
+  margin: 0px; }
+
+.fo-body .fo-bTime__area div + div:last-child::before {
+  content: "";
+  clear: both;
+  display: block;
+  height: 0px;
+  width: 90%;
+  margin: auto;
+  margin-top: 70px;
+  border-top: 1px solid #e0e0e0; }
+
+.fo-body .fo-bTime__area div + div:last-child::before {
+  content: "";
+  clear: both;
+  display: block;
+  height: 0px;
+  width: 90%;
+  margin: auto;
+  margin-top: 70px;
+  border-top: 1px solid #e0e0e0; }
+
+.fo-body .fo-bTime__area select#birthtime-h {
+  padding-left: 17%; }
+
+.fo-body .fo-bTime__area select#birthtime-m {
+  padding-left: 17%; }
+
+@media screen and (max-width: 320px) {
+  .fo-body .fo-bDay__area select#birthday-y {
+    padding-left: 3% !important;
+    padding-right: 2%;
+    font-size: 14px; }
+  .fo-body .fo-bTime__area select#birthtime-h,
+  .fo-body .fo-bTime__area select#birthtime-m {
+    padding-left: 15% !important; } }

@@ -1,0 +1,64 @@
+header .container {
+  background-image: url("/image/icon/hexagram.sp.480.png");
+  background-repeat: no-repeat;
+  background-position: 83% 6px;
+  background-size: 9px; }
+  header .container img[alt="deco01"] {
+    position: absolute;
+    left: 6px;
+    width: 63px; }
+  header .container .header-row .item-navigation {
+    margin-right: 12px; }
+    header .container .header-row .item-navigation a {
+      background-color: #6BCFCF;
+      border-radius: 50%;
+      line-height: 40px;
+      width: 40px;
+      position: relative; }
+      header .container .header-row .item-navigation a i {
+        position: relative;
+        bottom: 6px; }
+      header .container .header-row .item-navigation a p {
+        position: absolute;
+        bottom: 20px;
+        left: 10px;
+        font-size: 10px;
+        height: 10px;
+        margin-bottom: 0; }
+
+header.site-header {
+  position: fixed;
+  width: 100%;
+  background-image: url("/image/bgimg/header_bg.sp.480.png");
+  z-index: 99;
+  -webkit-box-shadow: 1px 0px 0px .4px;
+          box-shadow: 1px 0px 0px .4px; }
+  header.site-header h1 a {
+    background-image: url(/image/icon/hexagram.sp.480.png);
+    background-repeat: no-repeat;
+    background-position: 100% 8px;
+    background-size: 11px;
+    display: block;
+    width: 75%;
+    position: relative;
+    left: 8%;
+    height: 48px;
+    top: -12px;
+    background: none;
+    margin: auto; }
+  header.site-header .header-row.flex-row {
+    background-image: url(/image/site/brand.sp.480.png), url(/image/header/title_bg.sp.480.png);
+    background-repeat: no-repeat;
+    background-position: center, center;
+    background-size: 150px,58% 32px; }
+  header.site-header .header-row .zmdi-settings:before {
+    content: "";
+    background-image: url(/image/header/gear.sp.480.png);
+    background-position: 0px 1px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 15px;
+    display: block;
+    padding: 10px;
+    position: relative;
+    top: 2px; }

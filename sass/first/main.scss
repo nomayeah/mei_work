@@ -1,0 +1,80 @@
+
+.fi {
+  &-body {
+    .fo-body {
+      h3 {
+        margin-top: 25px;
+      }
+      .fo-name__area{
+        margin-bottom: 48px;
+        h4 {
+         margin-bottom: 18px;
+        }
+        p {
+          margin-bottom: 16px;
+          a{
+            color:#808080;
+          }
+        }
+      }
+      .fo-bDay__area{
+        margin-bottom:66px;
+      }
+      .fo-bTime__area {
+        margin-bottom: 48px;
+        p {
+          margin-bottom: 16px;
+        }
+        div {
+          &:nth-child(2)::before{
+            content:"";
+            clear: both;
+            display:block;
+            height: 0px;
+            width: 80%;
+            margin: auto;
+            margin-bottom:  2px;
+            border-top: 1px solid #e0e0e0;
+          }
+          &:first-child{ margin-bottom:10px; }
+        }
+      }
+      .fo-nArea_area{
+        margin-bottom:48px;
+        p{
+          margin-bottom:16px;
+        }
+      }
+    }
+  }
+  &-btn__complete {
+    #js-profModal__open {
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      height: 68px;
+      padding: 25px;
+      padding-top: 14px;
+      color: #fff;
+      background-color: #5BC3C9;
+      margin: auto;
+      z-index: 2;
+      transition: 0.3s;
+    }
+    input {
+        /*display: none;*/
+    }
+  }
+}
+
+.m-first{
+  label.cf-birth_area::after {content: "";position: absolute;display: block;border: 6px solid transparent;border-right: 8px solid #70D4D4;z-index: 1;right: 7%;top: 20px;transform: rotate(-90deg);}
+  label.cf-birth_area2::after {content: "";position: absolute;display: block;border: 6px solid transparent;border-right: 8px solid #70D4D4;z-index: 1;right: 7%;bottom: 10px;transform: rotate(-90deg);}
+  label[class^="cf-birth"]{display:inline;}
+}
+
+@import "_header.scss";
+@import "_formArea.scss";
+@import "_label.scss";
+@import "_custom.scss";

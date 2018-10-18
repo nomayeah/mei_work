@@ -1,0 +1,14 @@
+@media screen and (max-width:320px) {
+  .ft-firstView__message li:nth-child(2) {
+      margin-right: -12px;
+  }
+  .ft-firstView__BottomArea {
+    font-size:16px;
+  }
+  .ft-firstView__message{
+      top:35%;
+  }
+  .ft-discription__commonMessage .js-DairyContent .card ul.face.set li{
+    left:5%;
+  }
+}

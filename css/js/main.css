@@ -1,0 +1,786 @@
+@charset "UTF-8";
+/*���[�_�[*/
+#js-Carousel .carousel-control.left {
+  background-image: -webkit-linear-gradient(left, transparent 0, transparent 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(transparent), to(transparent));
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, transparent), to(transparent));
+  background-image: linear-gradient(to right, transparent 0, transparent 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+  background-repeat: repeat-x; }
+
+#js-Carousel .carousel-control.right {
+  background-image: -webkit-linear-gradient(left, transparent 0, transparent 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(transparent), to(transparent));
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, transparent), to(transparent));
+  background-image: linear-gradient(to right, transparent 0, transparent 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+  background-repeat: repeat-x; }
+
+#js-Carousel .carousel-indicators {
+  background: transparent;
+  position: initial;
+  bottom: 10px;
+  left: 0;
+  z-index: 15;
+  width: auto;
+  padding-left: 0;
+  margin-left: 0;
+  text-align: center;
+  list-style: none; }
+  #js-Carousel .carousel-indicators .active {
+    background-color: #8CCFCF; }
+  #js-Carousel .carousel-indicators li {
+    background-color: #E3D5F5;
+    border: 0; }
+
+#js-scrollTop > div {
+  position: fixed;
+  bottom: 4%;
+  z-index: 999; }
+
+#js-Modal .modal-dialog .modal-header {
+  background-color: #95DEDE;
+  text-align: center; }
+
+#js-Modal .modal-dialog .modal-content {
+  border-radius: 0; }
+
+#js-Modal .modal-dialog .modal-scroll {
+  max-height: 240px;
+  overflow-y: hidden;
+  margin: 0 -10px 0 0; }
+
+#js-profModal__content {
+  position: fixed;
+  width: 90%;
+  max-width: 90%;
+  margin: 1.5em 0.2% 0;
+  padding: 10px 0;
+  background: #fff;
+  z-index: 100; }
+  #js-profModal__content h5 {
+    margin-bottom: 37.5px;
+    margin-left: 10%;
+    margin-right: 10%; }
+
+#js-profModal__overlay {
+  z-index: 99;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background-color: rgba(0, 0, 0, 0.75); }
+
+.js-DairyTab_menu {
+  margin-left: -12px;
+  margin-right: -12px;
+  background-repeat: repeat-x; }
+  .js-DairyTab_menu li {
+    display: block;
+    list-style: none;
+    padding: 12px;
+    font-size: 18px; }
+    .js-DairyTab_menu li[data-menu__tab="true"] {
+      color: #5ABFB3;
+      border: none; }
+      .js-DairyTab_menu li[data-menu__tab="true"]:nth-child(2) {
+        border-left: 1px solid #a8a8a8;
+        border-right: 1px solid #a8a8a8; }
+    .js-DairyTab_menu li[data-menu__tab="false"] {
+      color: #a8a8a8;
+      border: 1px solid;
+      border-top: none; }
+      .js-DairyTab_menu li[data-menu__tab="false"]:first-child {
+        border-left: none;
+        border-right: none; }
+      .js-DairyTab_menu li[data-menu__tab="false"]:nth-child(2) {
+        border-right: 1px solid; }
+      .js-DairyTab_menu li[data-menu__tab="false"]:last-child {
+        border-right: none;
+        border-left: none; }
+
+.js-DairyTab {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 336px;
+  margin: auto;
+  background-image: url(/image/tab/bg.sp.480.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  position: relative;
+  top: -6px;
+  z-index: 9; }
+  .js-DairyTab li {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 40px;
+    position: relative;
+    color: #ccc; }
+    .js-DairyTab li[data-dairy__tab="true"] {
+      color: #5ABFB3; }
+  .js-DairyTab_menu::before {
+    content: "";
+    background-image: url("/image/line/spiral.sp.480.png");
+    background-repeat-x: repeat;
+    background-repeat-y: no-repeat;
+    background-size: contain;
+    display: block;
+    padding-top: 7px; }
+
+.js-top__btn {
+  position: relative;
+  background-color: #5bc3c9;
+  width: 45px;
+  height: 45px;
+  display: block;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 1px 4px;
+          box-shadow: 0px 1px 4px; }
+  .js-top__btn::after {
+    content: "";
+    position: absolute;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    width: 16px;
+    height: 16px;
+    top: 40%;
+    left: 15px;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+
+.js-more {
+  display: block;
+  background-color: #5BC3C9;
+  border-color: #5BC3C9;
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 15px;
+  margin: auto; }
+
+div[data-dairy__body="true"] {
+  display: block; }
+
+div[data-dairy__body="false"] {
+  display: none; }
+
+[data-menu__tab="false"] {
+  color: #A8A8A8; }
+
+[data-menu__tab="true"] {
+  color: #5ABFB3; }
+
+[data-menu__tab__body="true"] {
+  display: block; }
+
+[data-menu__tab__body="false"] {
+  display: none; }
+
+[data-menu__icon="false"] {
+  color: #C6CCCB; }
+
+[data-menu__icon="true"] {
+  color: #5ABFB3; }
+
+@media screen and (max-width: 320px) {
+  .js-DairyTab li:last-child {
+    font-size: 11px; } }
+
+div#js-scrollHint {
+  position: absolute;
+  top: 11%;
+  left: 30.5%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 25px;
+  padding: 12px;
+  background-image: url(/image/icon/slide.sp.480.png);
+  padding: 70px;
+  background-size: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  z-index: 2; }
+
+@media screen and (min-width: 425px) {
+  div#js-scrollHint {
+    left: 35%; } }
+
+@media screen and (min-width: 426px) {
+  div#js-scrollHint {
+    left: 39%; } }
+
+#js-loader {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  margin-top: -100px;
+  margin-left: -100px;
+  text-align: center;
+  color: #000;
+  z-index: 100; }
+  #js-loader-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+    display: block;
+    background: #f6f3e2; }
+
+.js-DairyContent p {
+  line-height: 2em;
+  text-align: justify; }
+
+.js-DairyContent .card {
+  position: relative;
+  max-width: 375px;
+  margin: auto;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent; }
+  .js-DairyContent .cardList {
+    width: 100%;
+    height: 100%;
+    /* display:table-cell;
+      vertical-align:middle;*/
+    text-align: center; }
+  .js-DairyContent .card ul {
+    height: 200px;
+    position: relative;
+    max-width: 320px;
+    margin: 24px auto 35px; }
+    .js-DairyContent .card ul.face.set li {
+      position: absolute;
+      top: 90px;
+      left: 15%;
+      -webkit-transform: rotate(-40deg);
+          -ms-transform: rotate(-40deg);
+              transform: rotate(-40deg); }
+    .js-DairyContent .card ul.face.set.move li {
+      position: absolute; }
+      .js-DairyContent .card ul.face.set.move li:first-child {
+        -webkit-transform: translate(7px, -5px);
+            -ms-transform: translate(7px, -5px);
+                transform: translate(7px, -5px);
+        -webkit-transition: 1100ms;
+        transition: 1100ms; }
+      .js-DairyContent .card ul.face.set.move li:nth-child(2) {
+        -webkit-transform: translate(23%, -15px);
+            -ms-transform: translate(23%, -15px);
+                transform: translate(23%, -15px);
+        -webkit-transition: 1100ms;
+        transition: 1100ms; }
+      .js-DairyContent .card ul.face.set.move li:nth-child(3) {
+        -webkit-transform: translate(44%, -27px);
+            -ms-transform: translate(44%, -27px);
+                transform: translate(44%, -27px);
+        -webkit-transition: 1300ms;
+        transition: 1300ms; }
+      .js-DairyContent .card ul.face.set.move li:nth-child(4) {
+        -webkit-transform: translate(80%, -32px);
+            -ms-transform: translate(80%, -32px);
+                transform: translate(80%, -32px);
+        -webkit-transition: 1300ms;
+        transition: 1300ms; }
+      .js-DairyContent .card ul.face.set.move li:nth-child(5) {
+        -webkit-transform: translate(110%, -27px);
+            -ms-transform: translate(110%, -27px);
+                transform: translate(110%, -27px);
+        -webkit-transition: 1200ms;
+        transition: 1200ms; }
+      .js-DairyContent .card ul.face.set.move li:nth-child(6) {
+        -webkit-transform: translate(146%, -7px);
+            -ms-transform: translate(146%, -7px);
+                transform: translate(146%, -7px);
+        -webkit-transition: 1100ms;
+        transition: 1100ms; }
+      .js-DairyContent .card ul.face.set.move li:nth-child(7) {
+        -webkit-transform: translate(166%, 15px);
+            -ms-transform: translate(166%, 15px);
+                transform: translate(166%, 15px);
+        -webkit-transition: 1000ms;
+        transition: 1000ms; }
+      .js-DairyContent .card ul.face.set.move li.draw {
+        -webkit-transition: 500ms;
+        transition: 500ms;
+        -webkit-transform: translate(0, 20px);
+            -ms-transform: translate(0, 20px);
+                transform: translate(0, 20px); }
+    .js-DairyContent .card ul.face img {
+      width: 80px; }
+    .js-DairyContent .card ul.move li:first-child img {
+      -webkit-transform: rotate(-40deg);
+          -ms-transform: rotate(-40deg);
+              transform: rotate(-40deg);
+      -webkit-transition: 500ms;
+      transition: 500ms; }
+    .js-DairyContent .card ul.move li:nth-child(2) img {
+      -webkit-transform: rotate(-24deg);
+          -ms-transform: rotate(-24deg);
+              transform: rotate(-24deg);
+      -webkit-transition: 500ms;
+      transition: 500ms; }
+    .js-DairyContent .card ul.move li:nth-child(3) img {
+      -webkit-transform: rotate(-14deg);
+          -ms-transform: rotate(-14deg);
+              transform: rotate(-14deg);
+      -webkit-transition: 500ms;
+      transition: 500ms; }
+    .js-DairyContent .card ul.move li:nth-child(4) img {
+      -webkit-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+              transform: rotate(0deg);
+      -webkit-transition: 500ms;
+      transition: 500ms; }
+    .js-DairyContent .card ul.move li:nth-child(5) img {
+      -webkit-transform: rotate(18deg);
+          -ms-transform: rotate(18deg);
+              transform: rotate(18deg);
+      -webkit-transition: 500ms;
+      transition: 500ms; }
+    .js-DairyContent .card ul.move li:nth-child(6) img {
+      -webkit-transform: rotate(36deg);
+          -ms-transform: rotate(36deg);
+              transform: rotate(36deg);
+      -webkit-transition: 500ms;
+      transition: 500ms; }
+    .js-DairyContent .card ul.move li:last-child img {
+      -webkit-transform: rotate(54deg);
+          -ms-transform: rotate(54deg);
+              transform: rotate(54deg);
+      -webkit-transition: 1100ms;
+      transition: 1100ms; }
+
+.js-DairyContent .back {
+  position: absolute;
+  left: 33%;
+  bottom: 0;
+  -webkit-transition: 2000ms;
+  transition: 2000ms; }
+  .js-DairyContent .back img {
+    width: 80px;
+    -webkit-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+            transform: rotate(10deg);
+    display: none; }
+
+.js-DairyContent #haikei1,
+.js-DairyContent #haikei2,
+.js-DairyContent #haikei3 {
+  /*height:200px;*/
+  padding-top: 30px;
+  margin: auto;
+  background-image: url(/image/bgimg/color_bg__purple.sp.480.png);
+  height: 128px;
+  margin-top: 16px;
+  border-radius: 6px;
+  max-width: 304px;
+  max-height: 128px; }
+
+.js-DairyContent #ta-result1,
+.js-DairyContent #ta-result2,
+.js-DairyContent #ta-result3 {
+  position: relative;
+  /*bottom: 165px;*/
+  padding: 12px; }
+
+.js-DairyContent #haikei1_1,
+.js-DairyContent #haikei2_1 {
+  padding-top: 30px;
+  margin: auto;
+  background-image: url(/image/bgimg/color_bg__purple.sp.480.png);
+  height: 128px;
+  margin-top: 16px;
+  border-radius: 6px;
+  max-width: 304px;
+  max-height: 128px; }
+  .js-DairyContent #haikei1_1 img,
+  .js-DairyContent #haikei2_1 img {
+    display: block; }
+
+.js-DairyContent .back_1 {
+  position: absolute;
+  left: 33%;
+  bottom: 0;
+  -webkit-transition: 2000ms;
+  transition: 2000ms; }
+  .js-DairyContent .back_1 img {
+    width: 80px;
+    position: relative;
+    left: 100px;
+    -webkit-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+            transform: rotate(10deg); }
+
+.js-DairyContent #ta-result1_1,
+.js-DairyContent #ta-result2_1 {
+  position: relative;
+  /* bottom: 165px; */
+  padding: 12px; }
+
+.js-horoscope {
+  height: 320px;
+  position: relative; }
+  .js-horoscope .rotate {
+    height: 100%;
+    position: relative;
+    bottom: 5%;
+    background-image: url(/image/horo/base.sp.480.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center 100%; }
+    .js-horoscope .rotate .targetCusp {
+      position: absolute;
+      width: 233px;
+      height: 236px;
+      bottom: 10%;
+      left: 0;
+      right: 0;
+      -webkit-transition: 2s;
+      transition: 2s;
+      z-index: 1;
+      margin: auto;
+      counter-increment: section; }
+      .js-horoscope .rotate .targetCusp p {
+        border: 1px solid #ccc;
+        margin-top: 50%;
+        width: 43.6%; }
+      .js-horoscope .rotate .targetCusp::after {
+        content: counter(section);
+        font-size: 12px;
+        position: absolute;
+        left: 33%;
+        bottom: 43%;
+        -webkit-transform: rotate(75deg);
+            -ms-transform: rotate(75deg);
+                transform: rotate(75deg); }
+
+.js-horoscope .rotate .targetAngles {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  position: absolute;
+  max-width: 300px;
+  height: 300px;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  margin: auto;
+  z-index: 2; }
+  .js-horoscope .rotate .targetAngles [class^="planet"] {
+    position: absolute;
+    -webkit-transition: 2s;
+    transition: 2s;
+    margin: auto; }
+    .js-horoscope .rotate .targetAngles [class^="planet"] img {
+      position: absolute;
+      top: -13px;
+      left: -13px;
+      width: 28px; }
+    .js-horoscope .rotate .targetAngles [class^="planet"].aspect {
+      z-index: 3; }
+      .js-horoscope .rotate .targetAngles [class^="planet"].aspect::before {
+        content: "";
+        border-right: 3px solid #9e8fd5;
+        width: 2px;
+        -webkit-box-shadow: 0px 0px 4px 1px #9e8fd5;
+                box-shadow: 0px 0px 4px 1px #9e8fd5;
+        display: block;
+        -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg); }
+    .js-horoscope .rotate .targetAngles [class^="planet"].transit.aspect {
+      z-index: 2; }
+
+.js-horoscope .rotate .targetAngles .planet1,
+.js-horoscope .rotate .targetAngles [class^="planet"].natal,
+.js-horoscope .rotate .targetAngles [class^="planet"].natal.transit {
+  width: 55px;
+  height: 55px;
+  bottom: 40.75%;
+  left: 0%;
+  right: 0; }
+
+.js-horoscope .rotate .targetAngles .planet2.transit {
+  width: 110px;
+  height: 110px;
+  bottom: 31.45%;
+  left: 0%;
+  right: 0; }
+
+.js-horoscope .rotate .targetAngles .planet3.transit {
+  width: 115px;
+  height: 115px;
+  bottom: 30.9%;
+  left: 0%;
+  right: 0; }
+
+.js-horoscope .rotate .targetAngles .planet4.transit {
+  width: 120px;
+  height: 120px;
+  bottom: 29.7%;
+  left: 0%;
+  right: 0; }
+
+.js-horoscope .rotate .targetAngles .planet5.transit {
+  width: 125px;
+  height: 125px;
+  bottom: 29%;
+  left: 0%;
+  right: 0; }
+
+.js-horoscope .rotate .targetAngles .planet6.transit {
+  width: 130px;
+  height: 130px;
+  bottom: 27.8%;
+  left: 0%;
+  right: 0; }
+
+.js-horoscope .rotate .targetAngles .planet7.transit {
+  width: 140px;
+  height: 140px;
+  bottom: 26.45%;
+  left: 0%;
+  right: 0; }
+
+.js-horoscope .rotate .targetAngles .planet8.transit {
+  width: 145px;
+  height: 145px;
+  bottom: 25.7%;
+  left: 0%;
+  right: 0; }
+
+.js-horoscope .rotate .targetAngles .planet9.transit {
+  width: 150px;
+  height: 150px;
+  bottom: 24.8%;
+  left: 0%;
+  right: 0; }
+
+.js-horoscope .rotate .targetAngles .planet1.aspect.natal::before {
+  margin-left: 27%;
+  height: 58%; }
+
+.js-horoscope .rotate .targetAngles .planet2.aspect.transit::before {
+  margin-left: 27.5%;
+  height: 58%; }
+
+.js-horoscope .rotate .targetAngles .planet3.aspect.transit::before {
+  margin-left: 28%;
+  height: 58%; }
+
+.js-horoscope .rotate .targetAngles .planet4.aspect.transit::before {
+  margin-left: 28%;
+  height: 60%; }
+
+.js-horoscope .rotate .targetAngles .planet5.aspect.transit::before {
+  margin-left: 28%;
+  height: 58%; }
+
+.js-horoscope .rotate .targetAngles .planet6.aspect.transit::before {
+  margin-left: 27.5%;
+  height: 59%; }
+
+.js-horoscope .rotate .targetAngles .planet7.aspect.transit::before {
+  margin-left: 28%;
+  height: 58%; }
+
+.js-horoscope .rotate .targetAngles .planet8.aspect.transit::before {
+  margin-left: 28%;
+  height: 58.5%; }
+
+.js-horoscope .rotate .targetAngles .planet9.aspect.transit::before {
+  margin-left: 28%;
+  height: 58.5%; }
+
+.js-horoscope .rotate .asc,
+.js-horoscope .rotate .dsc,
+.js-horoscope .rotate .ic,
+.js-horoscope .rotate .mc {
+  position: absolute;
+  -webkit-transition: 2s;
+  transition: 2s;
+  margin: auto;
+  width: 288px;
+  height: 285px;
+  bottom: 2%;
+  left: 0%;
+  right: 0;
+  text-align: left;
+  z-index: 2; }
+  .js-horoscope .rotate .asc img:not(.aspect),
+  .js-horoscope .rotate .dsc img:not(.aspect),
+  .js-horoscope .rotate .ic img:not(.aspect),
+  .js-horoscope .rotate .mc img:not(.aspect) {
+    width: 50px;
+    position: relative;
+    top: 119px;
+    margin-top: 0; }
+  .js-horoscope .rotate .asc.aspect,
+  .js-horoscope .rotate .dsc.aspect,
+  .js-horoscope .rotate .ic.aspect,
+  .js-horoscope .rotate .mc.aspect {
+    z-index: 2; }
+    .js-horoscope .rotate .asc.aspect img,
+    .js-horoscope .rotate .dsc.aspect img,
+    .js-horoscope .rotate .ic.aspect img,
+    .js-horoscope .rotate .mc.aspect img {
+      margin-top: 45%;
+      position: relative;
+      left: 7px;
+      bottom: 1px;
+      width: 30px; }
+    .js-horoscope .rotate .asc.aspect::after,
+    .js-horoscope .rotate .dsc.aspect::after,
+    .js-horoscope .rotate .ic.aspect::after,
+    .js-horoscope .rotate .mc.aspect::after {
+      content: "";
+      border-right: 3px solid #9e8fd5;
+      width: 2px;
+      -webkit-box-shadow: 0px 0px 4px 1px #9e8fd5;
+              box-shadow: 0px 0px 4px 1px #9e8fd5;
+      display: block;
+      -webkit-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+              transform: rotate(90deg);
+      margin-left: 31%;
+      margin-top: -24%;
+      height: 106px; }
+
+.aspect > .blink {
+  position: absolute;
+  top: -14px;
+  left: -14px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 0px 4px 2px #ff0;
+          box-shadow: 0px 0px 4px 2px #ff0;
+  background: #ff0;
+  animation: flash 3.5s infinite linear;
+  -webkit-animation: flash 3.5s infinite linear;
+  -moz-animation: flash 3.5s infinite linear; }
+
+.dsc.aspect > .blink,
+.asc.aspect > .blink,
+.mc.aspect > .blink,
+.ic.aspect > .blink {
+  position: absolute;
+  top: 129px;
+  left: 7px;
+  width: 30px;
+  height: 30px; }
+
+@keyframes flash {
+  0% {
+    opacity: 0.4; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0.4; } }
+
+@-webkit-keyframes flash {
+  0% {
+    opacity: 0.5; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0.5; } }
+
+@media screen and (max-width: 320px) {
+  .js-horoscope .rotate {
+    height: 90%;
+    bottom: 0;
+    background-size: 250px; }
+  .js-horoscope {
+    height: 300px; }
+  .js-horoscope .rotate .targetCusp {
+    width: 196px;
+    height: 199px;
+    bottom: 9.45%; }
+  .js-horoscope .rotate .targetAngles .planet1, .js-horoscope .rotate .targetAngles [class^="planet"].natal, .js-horoscope .rotate .targetAngles [class^="planet"].natal.transit {
+    width: 45px;
+    height: 45px; }
+  .js-horoscope .rotate .targetAngles .planet2.transit {
+    width: 95px;
+    height: 95px; }
+  .js-horoscope .rotate .targetAngles .planet3.transit {
+    width: 100px;
+    height: 100px; }
+  .js-horoscope .rotate .targetAngles .planet4.transit {
+    width: 105px;
+    height: 105px; }
+  .js-horoscope .rotate .targetAngles .planet5.transit {
+    width: 110px;
+    height: 110px; }
+  .js-horoscope .rotate .targetAngles .planet6.transit {
+    width: 115px;
+    height: 115px; }
+  .js-horoscope .rotate .targetAngles .planet7.transit {
+    width: 120px;
+    height: 120px; }
+  .js-horoscope .rotate .targetAngles .planet8.transit {
+    width: 125px;
+    height: 125px;
+    bottom: 24.9%; }
+  .js-horoscope .rotate .targetAngles .planet9.transit {
+    width: 130px;
+    height: 130px; }
+  .js-horoscope .rotate .asc, .js-horoscope .rotate .dsc, .js-horoscope .rotate .ic, .js-horoscope .rotate .mc {
+    position: absolute;
+    -webkit-transition: 2s;
+    transition: 2s;
+    margin: auto;
+    width: 238px;
+    height: 235px;
+    bottom: 2.5%;
+    left: 0%;
+    right: 0;
+    text-align: left; }
+  .js-horoscope .rotate .targetAngles {
+    max-width: 250px;
+    height: 250px;
+    bottom: 0%;
+    left: 0%;
+    right: 0%; }
+  .dsc.aspect > .blink, .asc.aspect > .blink, .mc.aspect > .blink, .ic.aspect > .blink {
+    top: 103px; }
+  .js-horoscope .rotate .asc.aspect::after, .js-horoscope .rotate .dsc.aspect::after, .js-horoscope .rotate .ic.aspect::after, .js-horoscope .rotate .mc.aspect::after {
+    margin-left: 32%;
+    margin-top: -25%;
+    height: 81px; }
+  .js-horoscope .rotate .asc img:not(.aspect), .js-horoscope .rotate .dsc img:not(.aspect), .js-horoscope .rotate .ic img:not(.aspect), .js-horoscope .rotate .mc img:not(.aspect) {
+    top: 93px; }
+  .js-horoscope .rotate .targetAngles .planet1.aspect.natal::before {
+    height: 59%; }
+  .js-horoscope .rotate .asc.aspect img, .js-horoscope .rotate .dsc.aspect img, .js-horoscope .rotate .ic.aspect img, .js-horoscope .rotate .mc.aspect img {
+    bottom: 4px; } }

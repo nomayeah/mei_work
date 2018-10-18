@@ -1,0 +1,251 @@
+/*ƒ[ƒ_[*/
+#js{
+  &-Carousel{
+    .carousel{
+      &-control{
+        &.left {
+          background-image: -webkit-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
+          background-image: -o-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
+          background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,0)),to(rgba(0,0,0,0)));
+          background-image: linear-gradient(to right,rgba(0,0,0,0) 0,rgba(0,0,0,.0000) 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+          background-repeat: repeat-x;
+        }
+        &.right {
+          background-image: -webkit-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
+          background-image: -o-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
+          background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,0)),to(rgba(0,0,0,0)));
+          background-image: linear-gradient(to right,rgba(0,0,0,0) 0,rgba(0,0,0,.0000) 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+          background-repeat: repeat-x;
+        }
+      }
+      &-indicators {
+        background: transparent;
+        position: initial;
+        bottom: 10px;
+        left: 0;
+        z-index: 15;
+        width: auto;
+        padding-left: 0;
+        margin-left: 0;
+        text-align: center;
+        list-style: none;
+        .active {
+          background-color: #8CCFCF;
+        }
+        li {
+          background-color: #E3D5F5;
+          border: 0;
+        }
+      }
+    }
+  }
+  &-scrollTop > div{
+    position:fixed;
+    bottom:4%;
+    z-index: 999;
+  }
+  &-Modal{
+    .modal-dialog{
+      .modal-header {
+        background-color:#95DEDE;
+        text-align:center;
+      }
+      .modal-content {
+        border-radius: 0;
+      }
+      .modal-scroll {
+        max-height: 240px;
+        overflow-y: hidden;
+        margin: 0 -10px 0 0;
+      }
+    }
+  }
+  &-profModal{
+    &__content{
+      position: fixed;
+      width: 90%;
+      max-width: 90%;
+      margin: 1.5em 0.2% 0;
+      padding: 10px 0;
+      background: #fff;
+      z-index: 100;
+      h5 {
+        margin-bottom:  37.5px;
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+    }
+    &__overlay{
+      z-index:99;
+      display:none;
+      position:fixed;
+      top:0;
+      left:0;
+      width:100%;
+      height:120%;
+      background-color:rgba(0,0,0,0.75);
+    }
+  }
+}
+
+.js{
+  &-DairyTab_menu {
+    margin-left:-12px;
+    margin-right:-12px;
+    //background-image: url(/image/line/spiral.sp.480.png);
+    background-repeat: repeat-x;
+    //background-size: 270px;
+    li{
+      display:block;
+      list-style: none;
+      padding:12px;
+      font-size: 18px;
+      &[data-menu__tab="true"]{
+        color:#5ABFB3;
+        border:none;
+        &:nth-child(2){
+          border-left:1px solid #a8a8a8;
+          border-right:1px solid #a8a8a8;
+        }
+      }
+      &[data-menu__tab="false"]{
+        color:#a8a8a8;
+        border:1px solid;
+        border-top:none;
+        &:first-child{
+          border-left:none;
+          border-right:none;
+        }
+        &:nth-child(2){
+            border-right:1px solid;
+        }
+        &:last-child{
+          border-right:none;
+          border-left:none;
+        }
+      }
+    }
+  }
+  &-DairyTab {
+    display: flex;
+    justify-content: center;
+    max-width: 336px;
+    margin: auto;
+    background-image: url(/image/tab/bg.sp.480.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    position: relative;
+    top: -6px;
+    z-index: 9;
+    li {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+      position: relative;
+      color: #ccc;
+      &[data-dairy__tab="true"] {
+        color: #5ABFB3;
+      }
+    }
+    &_menu{
+      &::before {
+        content: "";
+        background-image: url("/image/line/spiral.sp.480.png");
+        background-repeat-x:  repeat;
+        background-repeat-y:  no-repeat;
+        background-size:  contain;
+        display: block;
+        padding-top: 7px;
+      }
+    }
+  }
+  &-top__btn {
+    position:relative;
+    background-color: #5bc3c9;
+    width: 45px;
+    height: 45px;
+    display: block;
+    border-radius: 50%;
+    box-shadow: 0px 1px 4px;
+    &::after {
+      content: "";
+      position: absolute;
+      border-top: 2px solid #fff;
+      border-right: 2px solid #fff;
+      width: 16px;
+      height: 16px;
+      top: 40%;
+      left: 15px;
+      transform: rotate(-45deg);
+    }
+  }
+  &-more {
+    display: block;
+    background-color: #5BC3C9;
+    border-color:  #5BC3C9;
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 15px;
+    margin: auto;
+  }
+}
+
+
+div[data-dairy__body="true"] {display: block;}
+div[data-dairy__body="false"] {display: none;}
+
+[data-menu__tab="false"]{color: #A8A8A8;}
+[data-menu__tab="true"] {color: #5ABFB3;}
+[data-menu__tab__body="true"] {display: block;}
+[data-menu__tab__body="false"] {display: none;}
+
+[data-menu__icon="false"]{color:#C6CCCB;}
+[data-menu__icon="true"]{color:#5ABFB3;}
+
+
+@media screen and (max-width: 320px){
+  .js-DairyTab li:last-child{
+      font-size:11px;
+  }
+}
+
+
+div#js-scrollHint {
+    position: absolute;
+    top: 11%;
+    left: 30.5%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 25px;
+    padding: 12px;
+    background-image: url(/image/icon/slide.sp.480.png);
+    padding: 70px;
+    background-size: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    z-index:2;
+}
+
+@media screen and (min-width: 425px){
+  div#js-scrollHint {
+    left: 35%;
+  }
+}
+
+@media screen and (min-width: 426px){
+  div#js-scrollHint {
+    left: 39%;
+  }
+}
+
+
+@import "_loader";
+@import "_DailyContent";
+@import "_horoscope";
+@import "_320";

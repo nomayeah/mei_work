@@ -1,0 +1,128 @@
+
+label {
+  &.birthtime-h {
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      border: 6px solid transparent;
+      border-right: 8px solid #70D4D4;
+      z-index: 1;
+      right: 55%;
+      top: 20px;
+      transform: rotate(-90deg);
+    }
+    &::before {
+      content:  "時";
+      font-size: 16px;
+      color: #a8a8a8;
+      position: absolute;
+      top: 11px;
+      left: 27%;
+      z-index: 1;
+    }
+  }
+
+  &.birthtime-m {
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      border: 6px solid transparent;
+      border-right: 8px solid #70D4D4;
+      z-index: 1;
+      right: 7%;
+      top: 20px;
+      transform: rotate(-90deg);
+    }
+    &::before {
+      content: "分";
+      font-size: 16px;
+      color: #a8a8a8;
+      position: absolute;
+      top: 11px;
+      right: 20%;
+      z-index: 1;
+      pointer-events: none;
+    }
+  }
+
+  &.birthday-y {
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      border: 6px solid transparent;
+      border-right: 8px solid #70D4D4;
+      z-index: 1;
+      left: 34%;
+      top: 20px;
+      transform: rotate(-90deg);
+      pointer-events: none;
+    }
+    &::before {
+      content: "年";
+      font-size: 16px;
+      color: #a8a8a8;
+      position: absolute;
+      top: 11px;
+      left: 26%;
+      z-index: 1;
+      pointer-events: none;
+    }
+  }
+
+  &.birthday-m {
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      border: 6px solid transparent;
+      border-right: 8px solid #70D4D4;
+      z-index: 1;
+      left: 62%;
+      top: 20px;
+      transform: rotate(-90deg);
+      pointer-events: none;
+    }
+    &::before {
+      content: "月";
+      font-size: 16px;
+      color: #a8a8a8;
+      position: absolute;
+      top: 11px;
+      left: 56%;
+      z-index: 1;
+      pointer-events: none;
+    }
+  }
+
+  &.birthday-d {
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      border: 6px solid transparent;
+      border-right: 8px solid #70D4D4;
+      z-index: 1;
+      right: 6%;
+      top: 20px;
+      transform: rotate(-90deg);
+      pointer-events: none;
+    }
+    &::before {
+      content: "日";
+      font-size: 16px;
+      color: #a8a8a8;
+      position: absolute;
+      top: 11px;
+      left: 83%;
+      z-index: 1;
+      pointer-events: none;
+    }
+  }
+
+  &.fo-select__label {
+    display: inline;
+  }
+}

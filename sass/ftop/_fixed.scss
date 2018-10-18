@@ -1,0 +1,61 @@
+.ft-fixed__btn {
+  position: fixed;
+  bottom: -78px;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 12px 0;
+  background-color: rgba(255, 255, 255, .9);
+  transition: 0.5s;
+  &.js-active {
+    bottom: 0;
+  }
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #70d4d4;
+    height: 44px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 8px;
+    width: 214px;
+    margin: 0 auto;
+  }
+}
+
+.ft-fixed__balloon {
+  position: fixed;
+  bottom: 86px;
+  right: 5%;
+  width: 120px;
+  z-index: 100;
+  padding: 12px 0;
+  background-color: #fff;
+  transition: 0.5s;
+  text-align: center;
+  border-radius: 20px;
+  border:2px solid #70d5d4;
+  &::before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 48%;
+    margin-left: -15px;
+    border: 17px solid transparent;
+    border-top: 19px solid #70d5d4;
+  }
+  &::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -15px;
+    border: 15px solid transparent;
+    border-top: 15px solid #fff;
+  }
+  a, a:focus, a:hover{
+    color:#000;
+    display:block;
+  }
+}

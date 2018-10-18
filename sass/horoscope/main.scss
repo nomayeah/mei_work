@@ -1,0 +1,65 @@
+.m-fortune3-result .carousel-control.left,
+.m-fortune3-result .carousel-control.right,
+.m-kobetsu-fortune3-result .carousel-control.left,
+.m-kobetsu-fortune3-result .carousel-control.right {
+    background-image:none;
+    height: 79%;
+    top: 19%;
+}
+
+.m-fortune3-result a.carousel-control .glyphicon::before,
+.m-kobetsu-fortune3-result a.carousel-control .glyphicon::before {
+    color: #5ac3c9;
+}
+
+.m-fortune3-result .carousel-indicators,
+.m-kobetsu-fortune3-result .carousel-indicators{
+    top: 35px;
+    height:20px;
+}
+
+.m-fortune3-result .carousel-indicators li,
+.m-kobetsu-fortune3-result .carousel-indicators li {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 12px;
+    height: 12px;
+    margin: 1px 5px;
+}
+
+.m-fortune3-result .carousel-indicators .active,
+.m-kobetsu-fortune3-result .carousel-indicators .active {
+  background-color: #6acfd0;
+    width: 15px;
+    height: 15px;
+}
+
+.m-fortune3-result .carousel,
+.m-kobetsu-fortune3-result .carousel{
+  margin:0 -12px;
+}
+
+.m-fortune3-result .re-area__bg,
+.m-kobetsu-fortune3-result .re-area__bg{
+  margin:0;
+}
+.m-fortune3-result,
+.m-kobetsu-fortune3-result{
+  .carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
+      top: 35%;
+  }
+  .carousel-control{
+    font-size: 26px;
+  }
+}
+
+
+.m-kobetsu-fortune3-result .fade.in {
+    -webkit-transition: opacity 1s linear;
+    transition: opacity .25s linear;
+}
+
+.m-kobetsu-fortune3-result .fade {
+    opacity: 0;
+    -webkit-transition: opacity 1s linear;
+    transition: opacity .25s linear;
+}

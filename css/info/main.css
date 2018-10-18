@@ -1,0 +1,47 @@
+.m-info footer nav,
+.m-info2 footer nav {
+  display: none; }
+
+.m-info header,
+.m-info2 header {
+  display: none; }
+
+.m-info main#page-body,
+.m-info2 main#page-body {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  position: relative; }
+
+.m-info .se-close,
+.m-info2 .se-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 1;
+  background: #fff;
+  padding: 2px 7px;
+  border-radius: 50%; }
+  .m-info .se-close img,
+  .m-info2 .se-close img {
+    width: 11px;
+    height: 11px;
+    position: relative;
+    bottom: 1px; }
+  .m-info .se-close a,
+  .m-info2 .se-close a {
+    display: block;
+    background-image: url(/image/icon/close.sp.480.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 9px 4px;
+    background-size: 10px; }
+
+.m-info ul,
+.m-info2 ul {
+  padding-bottom: 60%; }
+
+span.in-link__after.text-primary {
+  position: absolute;
+  bottom: 11px;
+  right: 5%; }

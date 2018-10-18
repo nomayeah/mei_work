@@ -1,0 +1,285 @@
+@charset "UTF-8";
+.fi-body .fo-body h3 {
+  margin-top: 25px; }
+
+.fi-body .fo-body .fo-name__area {
+  margin-bottom: 48px; }
+  .fi-body .fo-body .fo-name__area h4 {
+    margin-bottom: 18px; }
+  .fi-body .fo-body .fo-name__area p {
+    margin-bottom: 16px; }
+    .fi-body .fo-body .fo-name__area p a {
+      color: #808080; }
+
+.fi-body .fo-body .fo-bDay__area {
+  margin-bottom: 66px; }
+
+.fi-body .fo-body .fo-bTime__area {
+  margin-bottom: 48px; }
+  .fi-body .fo-body .fo-bTime__area p {
+    margin-bottom: 16px; }
+  .fi-body .fo-body .fo-bTime__area div:nth-child(2)::before {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2px;
+    border-top: 1px solid #e0e0e0; }
+  .fi-body .fo-body .fo-bTime__area div:first-child {
+    margin-bottom: 10px; }
+
+.fi-body .fo-body .fo-nArea_area {
+  margin-bottom: 48px; }
+  .fi-body .fo-body .fo-nArea_area p {
+    margin-bottom: 16px; }
+
+.fi-btn__complete #js-profModal__open {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 68px;
+  padding: 25px;
+  padding-top: 14px;
+  color: #fff;
+  background-color: #5BC3C9;
+  margin: auto;
+  z-index: 2;
+  transition: 0.3s; }
+
+.fi-btn__complete input {
+  /*display: none;*/ }
+
+.fi-header__firstMessage {
+  background-image: url(/image/bgimg/header_bg.sp.480.png);
+  position: relative;
+  width: 100%;
+  height: 254px;
+  transition: 0.3s;
+  z-index: 2; }
+  .fi-header__firstMessage::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom: 20px solid #fff;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: auto; }
+  .fi-header__firstMessage::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 20px;
+    border-radius: 10px 10px 0 0;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+  .fi-header__firstMessage span {
+    background-image: url(/image/header/title_bg.sp.480.png);
+    background-repeat: no-repeat;
+    background-size: 286px;
+    background-position: 50%;
+    height: 42px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 16px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 2;
+    color: #249096;
+    font-size: 17px;
+    font-weight: 500; }
+  .fi-header__firstMessage > img:nth-of-type(1) {
+    width: 60px;
+    position: absolute;
+    left: 6px;
+    z-index: 1; }
+  .fi-header__firstMessage > img:nth-of-type(2) {
+    width: 60px;
+    position: absolute;
+    right: 6px;
+    z-index: 1; }
+
+.fi-header__firstSv {
+  width: 143px;
+  margin: 0px auto;
+  padding-top: 70px;
+  transition: 0.3s; }
+  .fi-header__firstSv img {
+    width: 100%; }
+
+.fi-header.js-active {
+  padding-top: 130px; }
+  .fi-header.js-active .fi-header__firstMessage {
+    height: 130px;
+    position: fixed;
+    top: 0;
+    left: 0; }
+    .fi-header.js-active .fi-header__firstMessage span {
+      opacity: 0; }
+    .fi-header.js-active .fi-header__firstMessage .fi-header__firstSv {
+      padding-top: 6px;
+      width: 90px; }
+    .fi-header.js-active .fi-header__firstMessage::before {
+      bottom: 10px; }
+
+.fi-formArea {
+  background-color: #fff;
+  padding: 1px 1px 60px 1px;
+  margin: 0; }
+
+label.birthtime-h::after {
+  content: "";
+  position: absolute;
+  display: block;
+  border: 6px solid transparent;
+  border-right: 8px solid #70D4D4;
+  z-index: 1;
+  right: 55%;
+  top: 20px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg); }
+
+label.birthtime-h::before {
+  content: "時";
+  font-size: 16px;
+  color: #a8a8a8;
+  position: absolute;
+  top: 11px;
+  left: 27%;
+  z-index: 1; }
+
+label.birthtime-m::after {
+  content: "";
+  position: absolute;
+  display: block;
+  border: 6px solid transparent;
+  border-right: 8px solid #70D4D4;
+  z-index: 1;
+  right: 7%;
+  top: 20px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg); }
+
+label.birthtime-m::before {
+  content: "分";
+  font-size: 16px;
+  color: #a8a8a8;
+  position: absolute;
+  top: 11px;
+  right: 20%;
+  z-index: 1;
+  pointer-events: none; }
+
+label.birthday-y::after {
+  content: "";
+  position: absolute;
+  display: block;
+  border: 6px solid transparent;
+  border-right: 8px solid #70D4D4;
+  z-index: 1;
+  left: 34%;
+  top: 20px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  pointer-events: none; }
+
+label.birthday-y::before {
+  content: "年";
+  font-size: 16px;
+  color: #a8a8a8;
+  position: absolute;
+  top: 11px;
+  left: 26%;
+  z-index: 1;
+  pointer-events: none; }
+
+label.birthday-m::after {
+  content: "";
+  position: absolute;
+  display: block;
+  border: 6px solid transparent;
+  border-right: 8px solid #70D4D4;
+  z-index: 1;
+  left: 62%;
+  top: 20px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  pointer-events: none; }
+
+label.birthday-m::before {
+  content: "月";
+  font-size: 16px;
+  color: #a8a8a8;
+  position: absolute;
+  top: 11px;
+  left: 56%;
+  z-index: 1;
+  pointer-events: none; }
+
+label.birthday-d::after {
+  content: "";
+  position: absolute;
+  display: block;
+  border: 6px solid transparent;
+  border-right: 8px solid #70D4D4;
+  z-index: 1;
+  right: 6%;
+  top: 20px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  pointer-events: none; }
+
+label.birthday-d::before {
+  content: "日";
+  font-size: 16px;
+  color: #a8a8a8;
+  position: absolute;
+  top: 11px;
+  left: 83%;
+  z-index: 1;
+  pointer-events: none; }
+
+label.fo-select__label {
+  display: inline; }
+
+select {
+  position: relative; }
+
+.fo-select__label + select {
+  padding-left: 17% !important; }
+
+#fo-bDay .fo-select__label + select {
+  padding-left: 5% !important;
+  width: 26% !important; }
+
+#fo-bDay .fo-select__label.birthday-y + select {
+  padding-left: 10% !important;
+  width: 40% !important; }
+
+#fo-nArea .fo-select__label + select {
+  padding-left: 8px !important;
+  text-align: left !important;
+  text-align: -webkit-center; }
+
+.m-first main.page-body {
+  padding: 0px; }
+
+.disabled_1,
+.disabled_2 {
+  pointer-events: none;
+  background: #c9c9c9 !important; }
+
+.disabled_3 #fi-btn__complete_text {
+  display: none; }

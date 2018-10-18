@@ -1,0 +1,21 @@
+.se-head__tag::before {
+  content: "";
+  height: 35px;
+  width: 24px;
+  background-image: url("/image/icon/hexagram.sp.480.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: block;
+  float: left;
+  margin-right: 8px; }
+
+h4.se-head__tag span {
+  position: relative;
+  top: 9px; }
+
+.m-search .tag-group-lg {
+  margin: 4px 0;
+  display: inline-block; }
+  .m-search .tag-group-lg a:hover, .m-search .tag-group-lg a:focus {
+    color: #fff; }

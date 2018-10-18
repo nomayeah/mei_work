@@ -1,0 +1,195 @@
+.ft-discription {
+  background-color: transparent;
+  padding: 0 12px;
+
+  &__section {
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 43px 0 10px;
+    width: 100%;
+    margin-bottom: 12px;
+    margin-top: 63px;
+    position: relative;
+    > div {
+      width: 89.744%;
+      margin-left: auto;
+      margin-right: auto;
+      &.ft-discription__title {width: 102%;}
+      &.ft-discription__commonMessage {width: 95%;}
+    }
+  }
+
+  &__title {
+    position: absolute;
+    top: -48px;
+    left: -1%;
+    right: 0;
+    text-align: center;
+    color: #525252;
+    font-weight: 500;
+    padding: 11.5% 0 20px;
+    margin: 0 auto 24px;
+    font-size: 16px;
+    z-index: 2;
+    img {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+    }
+    &::before {
+      display: block;
+      content: "";
+      width: 22px;
+      height: 22px;
+      background-image: url(/image/ftop/numbers.sp.480.png);
+      background-size: 264px;
+      position: absolute;
+      top: 14px;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+  }
+
+  &__message {
+    text-align: left;
+    color: #525252;
+    padding-left: 50px;
+    font-size: 16px;
+    margin: 0px auto 12px;
+    line-height: 1.6;
+    font-weight: 500;
+    background-image: url(/image/supervisor.sp.480.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 41px;
+    img {
+      width: 41px;
+      display: inline-block;
+      margin-right: 10px;
+      vertical-align: bottom;
+    }
+    b {
+      font-weight: 700;
+      font-size: 18px;
+    }
+  }
+
+  &__image {
+    margin: 0 auto 24px;
+    &.plus {
+      margin-top: 68px;
+      position: relative;
+      &::after {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 30px;
+        background-image: url(/image/ftop/ft_add.sp.480.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -48px;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+    }
+  }
+
+  &__subMessage {
+    color: #808080;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 0 auto 30px;
+    font-size: 14px;
+  }
+
+  &__mainMessage {
+    color: #39B0B8;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 48px;
+    position: relative;
+    margin-bottom: 24px;
+    &::after {
+      content: "";
+      display: block;
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: -32px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      background-image: url(/image/ftop/ft_arrow.sp.480.png);
+      background-size: 30px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__commonMessage {
+    background-color: #fff;
+    border: 1px solid #B7E8E8;
+    border-radius: 4px;
+    padding: 24px 16px 0;
+    > div:nth-of-type(1) {
+      margin-bottom: 14px;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 500;
+      color: #808080;
+    }
+    > div:nth-of-type(2) {
+      display: flex;
+      justify-content: space-around;
+      img {
+        width: 49%;
+        height: 100%;
+      }
+    }
+    > ul:nth-of-type(1) {
+      list-style-type: none;
+      position: relative;
+      padding-left: 9%;
+      margin: 0 auto 36px;
+      &::after {
+        color: #808080;
+        content: "他...";
+        display: block;
+        position: absolute;
+        bottom: -18px;
+        right: 0;
+        font-size: 16px;
+      }
+      li {
+        font-size: 14px;
+        line-height: 24px;
+        position: relative;
+        color: #808080;
+        &::before {
+          content: "・";
+          display: block;
+          position: absolute;
+          left: -16px;
+        }
+      }
+    }
+    .de-frame {
+      margin-bottom: 0;
+    }
+    .ft-discription__commonMessage {
+      border: 0;
+      ul:nth-of-type(1)::after {
+        bottom: -38px;
+      }
+    }
+    &.common {
+      background-color: #f5f7f7;
+      border: 0;
+    }
+  }
+}

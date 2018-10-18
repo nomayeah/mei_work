@@ -1,0 +1,182 @@
+.ft {
+  .nav {
+    & > li{
+      & > a{
+        position: relative;
+        padding: 5px 8px;
+        border-radius: 50%;
+        font-size: 11px;
+        color: #000;
+        background-color:  #c4c4c4;
+        &::after{
+          content: "";
+          position: absolute;
+          display:  block;
+          width: 20%;
+          height: 36px;
+          background-color:  #c3c3c3;
+          top: 20px;
+          right: 38%;
+          margin: auto;
+        }
+      }
+      &.active{
+        &>a{
+          &::after{
+            background-color: #848484;
+          }
+        }
+      }
+      &:last-child{
+        &>a{
+          &::after{
+            content: none;
+          }
+        }
+      }
+    }
+    &-pills{
+      &>li{
+        margin-bottom: 30px;
+        &>a{
+          position: relative;
+          padding: 5px 8px;
+          border-radius: 50%;
+          font-size: 11px;
+          color: #000;
+          background-color:  #c4c4c4;
+        }
+        &.active{
+          &>a{
+            color: #fff;
+            background-color: #828282;
+            // &::after{
+
+            // }
+          }
+        }
+      }
+    }
+  }
+  &-trial {
+    margin: 0 -12px 20px;
+    background-image: url(/image/bgimg/color_bg__green.sp.480.png);
+    background-size: 12%;
+    padding: 7px;
+    background-color: transparent;
+    position: relative;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      background-image: url(/image/bgimg/result_bg__topleft.sp.480.png), url(/image/bgimg/result_bg__topright.sp.480.png);
+      background-repeat: no-repeat, no-repeat;
+      background-size: 40px, 40px;
+      background-position: 0 0, 100% 0;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 40px;
+      z-index: 10;
+    }
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      background-image: url(/image/bgimg/result_bg__bottomleft.sp.480.png),  url(/image/bgimg/result_bg__bottomright.sp.480.png);
+      background-repeat: no-repeat, no-repeat;
+      background-size: 40px, 40px;
+      background-position: 0 100%, 100% 100%;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 40px;
+      z-index: 10;
+    }
+    &-bg {
+      background-color: rgba(149, 222, 222, 0.8);
+      padding-top: 12.5%;
+      padding-bottom: 12px;
+    }
+    &__result {
+      //margin: 12px;
+      height: auto;
+      > ul {
+        position: relative;
+        z-index: 2;
+        background-color: #fff;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        top: 0;
+        background-image: none;
+        max-width: 100%;
+      }
+      &__bg {
+          width: 100%;
+          margin: 0px auto;
+          padding: 5px;
+          background-color: transparent;
+          position: relative;
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          border: 1px solid #525252;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          margin: auto;
+          background-image: linear-gradient(45deg, #ffffff 25%, #525252 25%, #525252 35%, #ffffff 35%, #ffffff 75%, #525252 75%, #525252 85%, #ffffff 85%, #ffffff);
+          background-size: 4px 4px;
+          z-index: 1;
+        }
+      }
+    }
+    &__content {
+      z-index: 2;
+      position: relative;
+      //background-color: #fff;
+      height: 100%;
+      padding: 0 5% 24px;
+    }
+  }
+
+  &-tarot {
+    .ft-discription__message {
+      text-align: center;
+      color: #39B0B8;
+      img {
+        width: 74px;
+        height: 74px;
+        margin: 0 auto 16px;
+      }
+      span {
+        display: block;
+      }
+    }
+  }
+}
+
+
+.f-top footer .cm-footer .cm-footer-help-link-group .cm-help-link:not(:nth-child(odd)) {
+  border-left: 1px solid ; }
+
+.f-top{
+  .cocoloni{
+    margin-bottom: -2px;
+    border-bottom: 1px solid #eee;
+  }
+  main.page-body.topPad{
+   padding-top:0;
+  }
+}
+
+@import "_firstView.scss";
+@import "_discription.scss";
+@import "_tarotArea.scss";
+@import "_contentList.scss";
+@import "_fixed.scss";
+@import "_320.scss";
+@import "_custom.scss";

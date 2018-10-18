@@ -1,0 +1,45 @@
+<!--INC_F'template_head.txt'-->
+<script src="/js/commonForm.js?v=<CTAG mode="fileupdate" format="YYYYMMDD-hhmmss" file="/js/commonForm.js">" charset="Shift-JIS"></script>
+<script>(function(){ commonForm('edit',1); })();</script>
+
+<article class="ed-body">
+  <div>
+    <form id="fo-body" class="fo-body" method="get" action="/t.cgi">
+      <input type="hidden" name="t" value="m/edit/complete">
+      <input type="hidden" name="bp" value="[%bp||np%]">
+      <input type="hidden" name="menu_id" value="[%menu_id%]">
+      [%IF package_id%]<input type="hidden" name="package_id" value="[%package_id%]">[%END%]
+      <input type="hidden" name="category" value="[%category%]">
+      <input type="hidden" name="theme" value="[%theme%]">
+
+      <div id="fo-name" class="fo-name__area">
+        <div class="clearfix">
+          <div class="col-xs-12">
+            <label for="tag-accent">ニックネーム <span class="tag">必須</span>[%IF e_name!=0%]<span class="text-danger">←</span>[%END%]</label>
+            <input class="fo-body__input required" type="text" name="name" maxlength="15" istyle="1" value="[%IF e_name==0%][%name_des%][%END%]"  autofocus inputmode="kana" placeholder="ニックネーム">
+          </div>
+        </div>
+      </div>
+
+      <div id="fo-gender" class="fo-gender__area clearfix">
+        <label class="col-xs-12" for="tag-accent">性別 <span class="tag">必須</span></label>
+        <ul class="clearfix">
+          <div class="col-xs-12">
+            <li class="text16">
+              <input id="gender_f" type="radio" name="gender" value="f"[%IF gender=='f' || gender==''%] checked[%END%]>
+              <label for="gender_f">女性</label>
+            </li>
+            <li class="text16">
+              <input id="gender_m" type="radio" name="gender" value="m"[%IF gender=='m' -%] checked[%END%]>
+              <label for="gender_m">男性</label>
+            </li>
+          </div>
+        </ul>
+      </div>
+
+      <div id="fo-bDay" class="fo-bDay__area">
+        <div class="clearfix">
+          <label class="col-xs-12" for="tag-accent">生年月日 <span class="tag">必須</span>[%IF e_birthday!=0%]<span class="text-danger">←</span>[%END%]</label>
+          <div class="col-xs-12">
+            <label class="birthday-y"></label>
+            <select id="birthday-y" class="fo-bDay__input fo-body__input ignore" inputmode="numeric" pattern="^(19|20)
